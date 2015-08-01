@@ -7,7 +7,7 @@ This is the personal website of Leo Arias.
 To install all the requirements to get and build the website:
 
    sudo apt-get install git python3-virtualenv python3-pip python3-dev
-   libxml2-dev libxslt1-dev
+   libxml2-dev libxslt1-dev pandoc pandoc-citeproc
 
 (Tested only in Ubuntu 15.04)
 
