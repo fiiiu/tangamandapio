@@ -32,9 +32,9 @@ To write a new post:
 
     nikola new_post
 
-Enter the title of the new post. Nikola will tenerate two files with that
-title as name, one for the metadata and one for the text of the post. Open the
-files and fill them.
+Enter the title of the new post.
+Nikola will generate two files with that title as name, one for the metadata
+and one for the text of the post. Open the files and fill them.
 
 ## Build
 
