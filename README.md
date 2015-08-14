@@ -6,7 +6,7 @@ This is the personal website of Leo Arias.
 
 To install all the requirements to get and build the website:
 
-    sudo apt-get install git python3-virtualenv python3-pip python3-dev
+    sudo apt-get install git python3-virtualenv python3-pip python3-dev \
     libxml2-dev libxslt1-dev pandoc pandoc-citeproc
 
 (Tested only in Ubuntu 15.04)
@@ -25,6 +25,16 @@ best way to install Nikola is to use pip in a virtualenv:
     virtualenv --python=python3 .env
     source .env/bin/activate
     pip install --upgrade "Nikola[extras]"
+
+## Post
+
+To write a new post:
+
+    nikola new_post
+
+Enter the title of the new post. Nikola will tenerate two files with that
+title as name, one for the metadata and one for the text of the post. Open the
+files and fill them.
 
 ## Build
 
