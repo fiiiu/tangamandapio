@@ -1,18 +1,26 @@
 language: python
 
-python:
-  - "3.4"
+python: "3.4"
+
+ghc: "7.8"
 
 env:
   global:
     - secure: "Y7lb8qI7Nf1pviTfHXYmqP2XvXhCeXfWzcUiI1b02pJgO/cQCdjZrI4QmHPB6i4zNakwHWyO2lH88EiaXPb1Vu3ADebEEix78Fp70O0cINknMRtbJT5d0LcBCND9bbzQy6SFEg94DcX6f6gUmMc2chhRSBirZWrS82qkmjKVhHSejdav8xH3W3fZiujpa5AWm6u45O8gWMyPk4OgXOU49xwaiStwHiaouOyYUO/xiOjcT9Ivr3xzAJDo/UFdn/Qq2DvSeeKIAyfmdpmtoD+DJHX6yhqw9FhyQvt57MOSvEhQQLcH06fnJsevBefdBaxBXMZb2sE96dz3LDB8zsi/UjNY/1ZqfVJKbgWZ76EwbOlVZNy0FnA1T7jqVXFHh2Ljxm2EaEQVHkMSadKIRovvRduQp0x5dpisUnXSzrAoKvDbGJYFql+u82iH9rrHtubN0XhN5tqKNB9XGEBpCqya5aVS76O/hwBRQNSVluSfE+lBFQYTvqL/HZKTuDB2mkM7qY+tRWLCN0CgY5T4Y/I4nI6Q+LOs186hJvh2fDWx0KN+ItNMVHIVlDu1sK4N0pVSN8N9JJvFEX8caqXVk0pbD1mGAXfkyUjWJadCiRlAGFQ8yVFRBcZArPpn3BaasuTB9IuiV2fCwN1VyEYs8DzqGuvTgAQGjZsRpBBwv20wadk="
 
-before_install:
-  - sudo apt-get update -qq
-  - sudo apt-get install -y libxml2-dev libxslt1-dev pandoc pandoc-citeproc
-  - chmod 755 ./.push_gh_pages.sh
+addons:
+  apt:
+    packages:
+      - libxml2-dev
+      - libxslt1-dev
+      - texlive
 
-install: "pip install Nikola[extras]"
+install:
+  - pip install Nikola[extras]
+  - cabal install pandoc pandoc-citeproc
+
+before_script:
+  - chmod 755 ./.push_gh_pages.sh
 
 script: nikola build
 
