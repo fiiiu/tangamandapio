@@ -30,6 +30,7 @@ best way to install Nikola is to use pip in a virtualenv:
 
 To write a new post:
 
+    cd tangamandapio
     nikola new_post
 
 Enter the title of the new post.
@@ -40,7 +41,6 @@ and one for the text of the post. Open the files and fill them.
 
 Build the website files with:
 
-    cd tangamandapio
     nikola build
 
 ## Try
@@ -52,5 +52,5 @@ You can see the generated website with:
 ## License
 
 You are free to use, remix and distribute everything as long as you follow the
-terms of the Cretive Commons Attribution-ShareAlike license. See the _LICENSE_
+terms of the Creative Commons Attribution-ShareAlike license. See the _LICENSE_
 file.
