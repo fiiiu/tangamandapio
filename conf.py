@@ -404,7 +404,8 @@ INDEX_PATH = ""
 #
 # If you don't need any of these, just set to []
 REDIRECTIONS = [
-    ("en/node/1042", "blog/connecting-to-snappy-through-the-serial-console")
+    ("en/node/1042",
+     "http://elopio.net/blog/connecting-to-snappy-through-the-serial-console")
 ]
 
 # Presets of commands to execute to deploy. Can be anything, for
