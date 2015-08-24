@@ -403,10 +403,7 @@ INDEX_PATH = ""
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = [
-    ("en/node/1042",
-     "http://elopio.net/blog/connecting-to-snappy-through-the-serial-console")
-]
+REDIRECTIONS = []
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
