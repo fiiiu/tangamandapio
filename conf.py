@@ -403,7 +403,10 @@ INDEX_PATH = ""
 # relative URL.
 #
 # If you don't need any of these, just set to []
-REDIRECTIONS = []
+REDIRECTIONS = [
+    ("en/node/1042/index.html",
+     "/blog/connecting-to-snappy-through-the-serial-console")
+]
 
 # Presets of commands to execute to deploy. Can be anything, for
 # example, you may use rsync:
