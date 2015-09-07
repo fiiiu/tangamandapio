@@ -126,18 +126,21 @@ NAVIGATION_LINKS = {
         ("/archive.html", "Archive"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
+        ("/notebook", "Notebook"),
     ),
 
     "es": (
         ("/es/archive.html", "Archivo"),
         ("/es/categories/", "Etiquetas"),
         ("/es/rss.xml", "Canal RSS"),
+        ("/notebook", "Notas"),
     ),
 
     "eo": (
         ("/eo/archive.html", "Arĥivo"),
         ("/eo/categories/", "Etikedoj"),
         ("/eo/rss.xml", "RSS feed"),
+        ("/notebook", "Notlibro"),
     ),
 }
 
@@ -217,7 +220,7 @@ POSTS = (
     ("posts/*.tex", "blog", "post.tmpl"),
 )
 PAGES = (
-    ("pages/*.tex", "", "story.tmpl"),
+    ("pages/*.tex", "notebook", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
