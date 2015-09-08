@@ -221,6 +221,7 @@ POSTS = (
 )
 PAGES = (
     ("pages/*.tex", "notebook", "story.tmpl"),
+    ("pages/*.org", "notebook", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
@@ -259,6 +260,7 @@ COMPILERS = {
     # but is disabled by default as it would conflict
     # with many of the others.
     "pandoc": ('.tex',),
+    "orgmode": ('.org',),
 }
 
 # Create by default posts in one file format?

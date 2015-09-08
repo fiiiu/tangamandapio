@@ -21,6 +21,7 @@ addons:
 
 install:
   - pip install Nikola[extras]
+  - nikola plugin -i orgmode
   - cabal update
   - cabal install pandoc pandoc-citeproc
 
