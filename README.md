@@ -28,6 +28,8 @@ best way to install Nikola is to use pip in a virtualenv:
 
 ## Install Nikola plugins
 
+To get and install the Nikola plugins:
+
    nikola plugin -i orgmode
 
 ## Post
