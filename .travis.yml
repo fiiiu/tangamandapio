@@ -30,7 +30,9 @@ install:
 before_script:
   - export PATH=$PATH:$HOME/.cabal/bin/
 
-script: nikola build
+script:
+  - emacs --batch -l /home/travis/build/elopio/tangamandapio/plugins/orgmode/init.el --eval (nikola-html-export "/home/travis/build/elopio/tangamandapio/pages/snappy.org" "/home/travis/build/elopio/tangamandapio/cache/pages/snappy.html")
+  - nikola build
 
 after_success:
   - chmod 755 ./.push_gh_pages.sh
