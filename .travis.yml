@@ -19,20 +19,21 @@ addons:
       - texlive
       - haskell-platform
       - emacs-nox
-      - org-mode
 
 install:
   - pip install Nikola[extras]
   - nikola plugin -i orgmode
   - cabal update
   - cabal install pandoc pandoc-citeproc
+  - mkdir -p $HOME/.emacs.d/src
+  - wget http://orgmode.org/org-8.3.1.tar.gz
+  - tar -C ~/.emacs.d/src/ -xvzf org-8.3.1.tar.gz
 
 before_script:
   - export PATH=$PATH:$HOME/.cabal/bin/
+  - sed -i "1i (let* ((org-lisp-dir \"~/.emacs.d/src/org-8.3.1/lisp\")) (when (file-directory-p org-lisp-dir) (add-to-list \'load-path org-lisp-dir) (require \'org)))" plugins/orgmode/init.el
 
-script:
-  - emacs --batch -l /home/travis/build/elopio/tangamandapio/plugins/orgmode/init.el --eval (nikola-html-export "/home/travis/build/elopio/tangamandapio/pages/snappy.org" "/home/travis/build/elopio/tangamandapio/cache/pages/snappy.html")
-  - nikola build
+script: nikola build
 
 after_success:
   - chmod 755 ./.push_gh_pages.sh
