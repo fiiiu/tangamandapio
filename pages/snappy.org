@@ -1,5 +1,9 @@
 * snappy-jenkins.ubuntu.com
 
-** plugins
+  * plugins
 
-   scm-sync-configuration git
+    scm-sync-configuration git
+
+  * cli
+
+    java -jar jenkins-cli.jar -s http://snappy-jenkins-be.internal:8080/
