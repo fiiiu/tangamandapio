@@ -19,6 +19,7 @@ addons:
       - texlive
       - haskell-platform
       - emacs-nox
+      - org-mode
 
 install:
   - pip install Nikola[extras]
