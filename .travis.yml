@@ -18,6 +18,7 @@ addons:
       - libxslt1-dev
       - texlive
       - haskell-platform
+      - emacs-nox
 
 install:
   - pip install Nikola[extras]
