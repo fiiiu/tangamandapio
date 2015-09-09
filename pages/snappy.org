@@ -1,3 +1,7 @@
+* flash
+
+  sudo ubuntu-device-flash core rolling --channel edge --oem beagleblack --developer-mode -o ubuntu-snappy-rolling-edge-armhf-bbb.img
+
 * snappy-jenkins.ubuntu.com
 
   * plugins
