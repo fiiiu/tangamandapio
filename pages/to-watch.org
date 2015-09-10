@@ -1,0 +1,3 @@
+* Python
+
+  [[https://www.youtube.com/watch?v%3DeQQ2uxMedGw][Use python to test]]
