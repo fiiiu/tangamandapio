@@ -43,6 +43,10 @@ Enter the title of the new post.
 Nikola will generate two files with that title as name, one for the metadata
 and one for the text of the post. Open the files and fill them.
 
+To write a new pag:
+
+    nikola new_page
+
 ## Build
 
 Build the website files with:
