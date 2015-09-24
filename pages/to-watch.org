@@ -1,6 +1,7 @@
 * Python
 
   [[https://www.youtube.com/watch?v%3DeQQ2uxMedGw][Use python to test]]
+
   [[https://www.youtube.com/watch?v%3DiwADIlIgDNA&feature%3Dshare][Connascence in Python]]
 
 * Go
