@@ -1,3 +1,5 @@
 * golang
 
   [[http://blog.labix.org/2011/10/09/death-of-goroutines-under-control][Death of goroutines under control]]
+
+  [[http://garrett.damore.org/2015/09/on-go-portability-and-system-interfaces.html?utm_source%3Dgolangweekly&utm_medium%3Demail][On Go, Portability, and System Interfaces]]
