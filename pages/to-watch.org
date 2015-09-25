@@ -7,3 +7,7 @@
 * Go
 
   [[https://www.youtube.com/watch?v%3DoorX84tBMqo&utm_source%3Dgolangweekly&utm_medium%3Demail][Program Analysis]]
+
+* Live and the universe
+
+  [[https://www.youtube.com/watch?v%3D4z4gISBuDVU][Richard Dawkins Conversation with Neil deGrasse Tyson at Hayden Planetarium ]]
