@@ -9,3 +9,5 @@
   [[http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF][Blind signatures for untraceable payments]]
 
   [[http://arxiv.org/pdf/1107.4524v2.pdf][An Analysis of Anonymity in the Bitcoin System]]
+
+  [[http://users.encs.concordia.ca/~clark/papers/2014_fc.pdf][Mixcoin: Anonymity for Bitcoin with Accountable Mixes]]
