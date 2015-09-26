@@ -11,3 +11,7 @@
   [[http://arxiv.org/pdf/1107.4524v2.pdf][An Analysis of Anonymity in the Bitcoin System]]
 
   [[http://users.encs.concordia.ca/~clark/papers/2014_fc.pdf][Mixcoin: Anonymity for Bitcoin with Accountable Mixes]]
+
+  [[http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber%3D6547123][Zerocoin: Anonymous Distributed E-Cash from Bitcoin]]
+
+  [[http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf][Zerocash:  Decentralized Anonymous Payments from Bitcoin]]
