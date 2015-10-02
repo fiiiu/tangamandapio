@@ -3,3 +3,15 @@
   [[http://blog.labix.org/2011/10/09/death-of-goroutines-under-control][Death of goroutines under control]]
 
   [[http://garrett.damore.org/2015/09/on-go-portability-and-system-interfaces.html?utm_source%3Dgolangweekly&utm_medium%3Demail][On Go, Portability, and System Interfaces]]
+
+* anonymity
+
+  [[http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF][Blind signatures for untraceable payments]]
+
+  [[http://arxiv.org/pdf/1107.4524v2.pdf][An Analysis of Anonymity in the Bitcoin System]]
+
+  [[http://users.encs.concordia.ca/~clark/papers/2014_fc.pdf][Mixcoin: Anonymity for Bitcoin with Accountable Mixes]]
+
+  [[http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber%3D6547123][Zerocoin: Anonymous Distributed E-Cash from Bitcoin]]
+
+  [[http://zerocash-project.org/media/pdf/zerocash-extended-20140518.pdf][Zerocash:  Decentralized Anonymous Payments from Bitcoin]]
