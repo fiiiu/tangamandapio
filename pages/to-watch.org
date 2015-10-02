@@ -11,3 +11,15 @@
 * Live and the universe
 
   [[https://www.youtube.com/watch?v%3D4z4gISBuDVU][Richard Dawkins Conversation with Neil deGrasse Tyson at Hayden Planetarium ]]
+
+* Debian
+
+  [[http://gensho.acc.umu.se/pub/debian-meetings/2015/debconf15/Reproducible_builds_roundtable_Discussing_the_changes_needed_for_officially_reproducible_builds.webm][Reproducible builds roundtable]]
+
+  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/PPAs_whats_next.webm][PPAs what is next?]]
+
+  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/Tutorial_functional_testing_of_Debian_packages.webm][Functional testing of Debian packages]]
+
+  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/jenkinsdebianorg-session.webm][jenkins.debian.org]]
+
+  [[http://saimei.acc.umu.se/pub/debian-meetings/2015/debconf15/Your_systemd_tool_box_dissecting_and_debugging_boot_and_services.webm][systemd debugging]]
