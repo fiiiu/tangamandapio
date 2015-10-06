@@ -23,3 +23,7 @@
   [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/jenkinsdebianorg-session.webm][jenkins.debian.org]]
 
   [[http://saimei.acc.umu.se/pub/debian-meetings/2015/debconf15/Your_systemd_tool_box_dissecting_and_debugging_boot_and_services.webm][systemd debugging]]
+
+  [[http://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/Preferred_Debian_Packaging.webm][Preferred Debian Packaging]]
+
+  [[http://meetings-archive.debian.net/pub/debian-meetings/2015/debconf15/Stretching_out_for_trustworthy_reproducible_builds_creating_bit_by_bit_identical_binaries.webm][Stretching out for trustworty reproducible builds]]
