@@ -19,3 +19,7 @@
 * vms
 
   [[http://eprints.gla.ac.uk/107266/1/107266.pdf][Cloud Computing Resource Scheduling and a Survey of its Evolutionary Approaches]]
+
+* distributed
+
+  [[https://github.com/tendermint/tendermint/wiki][Tendermint - Byzantine fault tolerant blockchain stack]]
