@@ -10,11 +10,7 @@
 
 * Live and the universe
 
-  [[https://www.youtube.com/watch?v%3D4z4gISBuDVU][Richard Dawkins Conversation with Neil deGrasse Tyson at Hayden Planetarium ]]
-
 * Debian
-
-  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/PPAs_whats_next.webm][PPAs what is next?]]
 
   [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/Tutorial_functional_testing_of_Debian_packages.webm][Functional testing of Debian packages]]
 
