@@ -23,3 +23,5 @@
 * distributed
 
   [[https://github.com/tendermint/tendermint/wiki][Tendermint - Byzantine fault tolerant blockchain stack]]
+
+  [[https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/][Solidity - Smart Contracts]]
