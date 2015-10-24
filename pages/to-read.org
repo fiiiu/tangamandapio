@@ -4,6 +4,8 @@
 
   [[http://garrett.damore.org/2015/09/on-go-portability-and-system-interfaces.html?utm_source%3Dgolangweekly&utm_medium%3Demail][On Go, Portability, and System Interfaces]]
 
+  [[http://nathanleclaire.com/blog/2015/10/10/interfaces-and-composition-for-effective-unit-testing-in-golang/?utm_source%3Dgolangweekly&utm_medium%3Demail][Interfaces and Composition for Effective Unit Testing in Golang]]
+
 * anonymity
 
   [[http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF][Blind signatures for untraceable payments]]
