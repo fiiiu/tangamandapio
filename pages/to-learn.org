@@ -1,3 +1,7 @@
 * Maps
 
   [[http://academy.cartodb.com/][Academy at cartodb]]
+
+* Linux
+
+  [[http://eudyptula-challenge.org/][The Eudyptula Challenge]]
