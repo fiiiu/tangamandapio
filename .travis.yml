@@ -14,7 +14,7 @@ cache:
 
 before_install:
   - sudo apt-get update -qq
-  - sudo apt-get install -y emacs-nox haskell-platform libxml2-dev libxslt1-dev texlive org-mode pandoc pandoc-citeproc
+  - sudo apt-get install -y emacs24-nox haskell-platform libxml2-dev libxslt1-dev texlive org-mode pandoc pandoc-citeproc
 
 install:
   - pip install Nikola[extras]
