@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty
 language: python
 
 python: "3.4"
@@ -8,30 +10,23 @@ env:
 
 cache:
   directories:
-    - $HOME/.cabal
     - $HOME/.cache/pip
 
 addons:
   apt:
     packages:
+      - emacs-nox
+      - haskell-platform
       - libxml2-dev
       - libxslt1-dev
       - texlive
-      - haskell-platform
-      - emacs-nox
+      - org-mode
+      - pandoc
+      - pandoc-citeproc
 
 install:
   - pip install Nikola[extras]
   - nikola plugin -i orgmode
-  - cabal update
-  - cabal install pandoc pandoc-citeproc
-  - mkdir -p $HOME/.emacs.d/src
-  - wget http://orgmode.org/org-8.3.1.tar.gz
-  - tar -C ~/.emacs.d/src/ -xvzf org-8.3.1.tar.gz
-
-before_script:
-  - export PATH=$PATH:$HOME/.cabal/bin/
-  - sed -i "1i (let* ((org-lisp-dir \"~/.emacs.d/src/org-8.3.1/lisp\")) (when (file-directory-p org-lisp-dir) (add-to-list \'load-path org-lisp-dir) (require \'org)))" plugins/orgmode/init.el
 
 script: nikola build
 
