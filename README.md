@@ -2,6 +2,8 @@
 
 This is the personal website of Leo Arias.
 
+[![Build Status](https://travis-ci.org/elopio/tangamandapio.svg)](https://travis-ci.org/elopio/tangamandapio)
+
 ## Dependencies
 
 To install all the requirements to get and build the website:
