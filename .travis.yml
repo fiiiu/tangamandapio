@@ -12,17 +12,9 @@ cache:
   directories:
     - $HOME/.cache/pip
 
-addons:
-  apt:
-    packages:
-      - emacs-nox
-      - haskell-platform
-      - libxml2-dev
-      - libxslt1-dev
-      - texlive
-      - org-mode
-      - pandoc
-      - pandoc-citeproc
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -y emacs-nox haskell-platform libxml2-dev libxslt1-dev texlive org-mode pandoc pandoc-citeproc
 
 install:
   - pip install Nikola[extras]
