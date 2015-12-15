@@ -5,3 +5,5 @@
 * For fun
 
   [[http://diwo.bq.com/wip-robot-articulado-imprimible/][Wip, un pequeño robot articulado]]
+
+  [[https://www.thingiverse.com/thing:750493][m-o]]
