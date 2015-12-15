@@ -5,3 +5,7 @@
 * Linux
 
   [[http://eudyptula-challenge.org/][The Eudyptula Challenge]]
+
+* FPGA
+
+  [[http://www.nandland.com/articles/fpga-101-fpgas-for-beginners.html][FGPA Fundamentals]]
