@@ -9,3 +9,7 @@
 * FPGA
 
   [[http://www.nandland.com/articles/fpga-101-fpgas-for-beginners.html][FGPA Fundamentals]]
+
+* Random
+
+  [[https://www.coursera.org/learn/gamification/home/info][Gamification]]
