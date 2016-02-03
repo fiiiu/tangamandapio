@@ -1,7 +1,3 @@
-* Python
-
-  [[https://www.youtube.com/watch?v%3DeQQ2uxMedGw][Use python to test]]
-
 * Go
 
   [[https://www.youtube.com/watch?v%3DoorX84tBMqo&utm_source%3Dgolangweekly&utm_medium%3Demail][Program Analysis]]

@@ -31,3 +31,7 @@
 * QA
 
   [[http://www.developsense.com/blog/2009/08/testing-vs-checking/][Testing vs. Checking]]
+
+* security
+
+  [[http://blog.invisiblethings.org/papers/2015/state_harmful.pdf][State considered harmful]]
