@@ -6,6 +6,8 @@
 
 * Live and the universe
 
+  [[https://www.youtube.com/watch?v%3DyjxAArOkoA0][Europe is Kaput]]
+
 * Debian
 
   [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/Tutorial_functional_testing_of_Debian_packages.webm][Functional testing of Debian packages]]
