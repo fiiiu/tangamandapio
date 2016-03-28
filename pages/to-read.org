@@ -28,6 +28,8 @@
 
   [[https://eng.erisindustries.com/tutorials/2015/03/11/solidity-1/][Solidity - Smart Contracts]]
 
+  [[http://www.triple-c.at/index.php/tripleC/article/view/728][Towards a (De)centralization-Based Typology of Peer Production]]
+
 * QA
 
   [[http://www.developsense.com/blog/2009/08/testing-vs-checking/][Testing vs. Checking]]
