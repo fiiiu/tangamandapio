@@ -13,3 +13,9 @@
   Split the slaves that run snapcraft and snappy.
   Tag the branch with PPA.
   Make a deploy machine.
+  Get scalingstack instances of other archs.
+
+* live and the universe
+
+  send the receipts to the accountant.
+  ask the number to Don Harry.
