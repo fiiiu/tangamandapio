@@ -1,0 +1,15 @@
+* snappy
+
+  Ask zyga about showing the interfaces that a snap supports. See [[https://bugs.launchpad.net/snappy/%2Bbug/1401655][bug #1401655]].
+  Run dragonboard tests in jenkins.
+  Read about macaroons:
+
+  :URLS:
+  http://research.google.com/pubs/pub41892.html
+  http://hackingdistributed.com/2014/05/16/macaroons-are-better-than-cookies/
+  https://air.mozilla.org/macaroons-cookies-with-contextual-caveats-for-decentralized-authorization-in-the-cloud/
+  :END:
+
+  Split the slaves that run snapcraft and snappy.
+  Tag the branch with PPA.
+  Make a deploy machine.
