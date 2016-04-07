@@ -1,3 +1,8 @@
+* golang
+
+  [[https://www.acksin.com/strum/][Linux Diagnostic Tool]]
+
+
 * docs
 
   [[https://www.mapbox.com/blog/retext-mapbox-standard/][Regulating English with retext-mapbox-standard]]
