@@ -1,3 +1,7 @@
+* work
+
+  irssi notifications.
+
 * snappy
 
   Ask zyga about showing the interfaces that a snap supports. See [[https://bugs.launchpad.net/snappy/%2Bbug/1401655][bug #1401655]].
