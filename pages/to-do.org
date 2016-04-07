@@ -19,6 +19,18 @@
   Make a deploy machine.
   Get scalingstack instances of other archs.
 
+
+* talks
+
+  FLISoL @ Parque de la libertad
+  SCHEDULED: <2016-04-23>
+
+  ubuntu @ UCR
+  SCHEDULED: <2016-04-26>
+
+  maps @ UCR
+  SCHEDULED: <2016-04-27>
+
 * live and the universe
 
   send the receipts to the accountant.
