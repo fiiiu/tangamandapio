@@ -4,6 +4,10 @@
 
   [[https://medium.com/@francesc/twelve-go-best-practices-ceca444b3733][Twelve Go Best Practices]]
 
+  [[https://www.youtube.com/watch?v%3D-KDRdz4S81U&index%3D7&list%3DPLxFC1MYuNgJT_ynbXGuYAZbSnUnq-6VQA][Perform better - Using Golang benchmark and profiling in everyday coding to make you optimize your code.]]
+
+  [[https://www.youtube.com/watch?v%3DYZpUCEXqmT8&index%3D12&list%3DPLxFC1MYuNgJT_ynbXGuYAZbSnUnq-6VQA][Comparative Analysis of Automation Frameworks (Testing).]]
+
 * Live and the universe
 
   [[https://www.youtube.com/watch?v%3DyjxAArOkoA0][Europe is Kaput]]
