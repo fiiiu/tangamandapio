@@ -6,3 +6,7 @@
 * docs
 
   [[https://www.mapbox.com/blog/retext-mapbox-standard/][Regulating English with retext-mapbox-standard]]
+
+* torrent
+
+  [[https://github.com/GrappigPanda/notorious][notorious tracker]]
