@@ -21,6 +21,7 @@
 * vms
 
   [[http://eprints.gla.ac.uk/107266/1/107266.pdf][Cloud Computing Resource Scheduling and a Survey of its Evolutionary Approaches]]
+  [[https://www.stgraber.org/2016/03/11/lxd-2-0-blog-post-series-012/][LXD]]
 
 * distributed
 
