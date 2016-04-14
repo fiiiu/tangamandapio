@@ -2,6 +2,9 @@
 
   [[https://www.acksin.com/strum/][Linux Diagnostic Tool]]
 
+* iot
+
+  [[http://www.eclipse.org/kura/][kura]]
 
 * docs
 
