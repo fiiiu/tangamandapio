@@ -1,0 +1,56 @@
+#+BEGIN_SRC sh
+  # create canonistack instance
+  source /path/to/novarc_lcy02
+  openstack server create --key-name elopio_lcy02 --flavor cpu10-ram10-disk100-ephemeral20 --image ubuntu-released/ubuntu-xenial-16.04-beta2-amd64-server-20160322-disk1.img remote-devel
+  # create user
+  ssh ubuntu@$ip -i /path/to/elopio_lcy02.key
+  sudo adduser elopio
+  sudo adduser elopio sudo
+  sudo su elopio
+  ssh-import-id elopio
+  exit
+  exit
+  ssh elopio@$ip
+  sudo deluser ubuntu
+  # basic setup
+  sudo apt-get update
+  sudo apt-get upgrade
+  sudo reboot
+  # locales
+  sudo apt-get install language-pack-en language-pack-eo language-pack-es
+  # mosh
+  sudo apt-get install mosh
+  exit
+  openstack security group create mosh
+  openstack security group rule create --proto udp --dst-port 60000:61000 --src-ip 0.0.0.0/0 mosh
+  openstack server add security group remote-devel mosh
+  mosh elopio@$ip
+  # utils
+  sudo apt-get install byobu
+  byobu
+
+  # irssi
+  sudo apt-get install irssi
+  # authentication
+  /msg nickserv identify $freenode_password
+  /hilight elopio
+  # autojoin
+  /server add -auto -network Freenode irc.freenode.net 6667
+  /network add -nick elopio Freenode
+  /channel add -auto #ubuntu Freenode
+  # send pings to the phone
+  wget -P ~/.irssi/script/ https://scripts.irssi.org/scripts/my_beep.pl
+  wget -P ~/bin https://bazaar.launchpad.net/~chipaca/+junk/poke/download/head:/iconator-20150219111307-4oqsppf10nk3zhfu-13/poke
+  mkdir -p ~/.config/poke
+  echo "$poke_token" > ~/.config/poke/token
+  chmod -R 700 ~/.config/poke/
+  /script load my_beep.pl
+  /set beep_cmd python3 ~/bin/poke -t IRC
+  /set bell_beeps ON
+  /set beep_msg_level MSGS NOTICES DCC DCCMSGS HILIGHT
+
+  # mutt
+  sudo apt-get install mutt
+
+
+#+END_SRC
