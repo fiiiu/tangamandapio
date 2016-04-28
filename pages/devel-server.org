@@ -81,7 +81,7 @@
   git remote add upstream git@github.com:ubuntu-core/snapcraft.git
   git fetch upstream
   sudo apt-get build-dep snapcraft
-  sudo apt-get install mercurial python3-flake8 python3-pexpect
+  sudo apt-get install mercurial python3-coverage python3-flake8 python3-pexpect
 
   # snappy
   mkdir -p ~/workspace/go/src/github.com/ubuntu-core
