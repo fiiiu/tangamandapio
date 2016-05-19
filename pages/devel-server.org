@@ -91,6 +91,8 @@
   git remote add upstream git@github.com:ubuntu-core/snappy.git
   git fetch upstream
 
+  export GOPATH=/home/elopio/workspace/go
+
   # lxd
   sudo apt install lxd
   sudo apt install zfsutils-linux
@@ -98,5 +100,8 @@
   # autopkgtests
   sudo apt-get install autopkgtest qemu-system qemu-utils
   adt-buildvm-ubuntu-cloud -v
+
+  # cloud
+  sudo apt install python3-openstackclient
 
 #+END_SRC
