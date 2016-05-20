@@ -104,4 +104,8 @@
   # cloud
   sudo apt install python3-openstackclient
 
+  # launchpad
+  sudo apt install bzr-builddeb
+  bzr launchpad-login elopio
+
 #+END_SRC
