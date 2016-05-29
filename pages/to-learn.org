@@ -28,6 +28,8 @@
 
   [[http://underactuated.csail.mit.edu/underactuated.html][Underactuated robots]]
 
+  [[https://www.coursera.org/learn/wireless-communication-technologies][Wireless]]
+
 * Accessibility
 
   [[https://www.edx.org/course/information-communication-technology-ict-ict100x][Information and Communication Technology (ICT) Accessibility]]
