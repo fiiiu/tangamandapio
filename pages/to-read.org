@@ -39,3 +39,6 @@
 
   [[http://blog.invisiblethings.org/papers/2015/state_harmful.pdf][State considered harmful]]
   [[http://static.usenix.org/legacy/events/sec09/tech/full_papers/sec09_browser.pdf][Crying Wolf: An Empirical Study of SSL Warning Effectivenes]]
+* linux
+
+  [[https://lwn.net/Articles/531114/#series_index][namespaces]]
