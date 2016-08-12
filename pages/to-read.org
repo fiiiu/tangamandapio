@@ -33,6 +33,8 @@
 
   [[https://lwn.net/Articles/646054/][Containers and persistent data]]
 
+  [[https://raft.github.io/raft.pdf][raft]]
+
 * QA
 
   [[http://www.developsense.com/blog/2009/08/testing-vs-checking/][Testing vs. Checking]]
