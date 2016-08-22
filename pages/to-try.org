@@ -13,6 +13,9 @@
 * torrent
 
   [[https://github.com/GrappigPanda/notorious][notorious tracker]]
+
+  [[https://github.com/anacrolix/torrent][go torrent]]
+
 * cloud
 
   [[https://github.com/kelseyhightower/kubernetes-the-hard-way][kubernetes the hard way]]
