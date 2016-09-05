@@ -1,6 +1,7 @@
 * Maps
 
   [[http://academy.cartodb.com/][Academy at cartodb]]
+  [[https://www.udemy.com/an-introduction-to-working-with-electronic-maps/][qgis]]
 
 * Linux
 
