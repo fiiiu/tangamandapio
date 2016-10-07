@@ -1,0 +1,3 @@
+* Reading email
+
+  * d: delete the current message
