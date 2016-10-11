@@ -7,6 +7,8 @@
 
   [[http://eudyptula-challenge.org/][The Eudyptula Challenge]]
 
+  [[https://www.edx.org/course/introduction-openstack-linuxfoundationx-lfs152x][Openstack]]
+
 * FPGA
 
   [[http://www.nandland.com/articles/fpga-101-fpgas-for-beginners.html][FGPA Fundamentals]]
@@ -32,5 +34,3 @@
   [[https://www.coursera.org/learn/wireless-communication-technologies][Wireless]]
 
   [[https://www.coursera.org/learn/subsistence-marketplaces#creators][Subsistence Marketplaces]]
-
-
