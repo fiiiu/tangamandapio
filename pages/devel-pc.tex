@@ -37,4 +37,10 @@
   sudo apt-get install spotify-client
 \end{verbatim}
 
+\section{ssh}
+\begin{verbatim}
+  ssh-import-id elopio
+  sudo sed -i "/^[^#]*PasswordAuthentication[[:space:]]yes/c\PasswordAuthentication no" /etc/ssh/sshd_config
+\end{verbatim}
+
 \end{document}
