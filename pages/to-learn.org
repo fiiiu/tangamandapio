@@ -17,6 +17,10 @@
 
   [[http://www.element14.com/community/docs/DOC-78585/l/beaglebone-black-webinar-series?CMP%3DSOM-MCM-PRG-bbb][BeagleBone Black Webinar Series]]
 
+* Arduino
+
+  http://www.instructables.com/class/Arduino-Class/
+
 * Random
 
   [[https://www.coursera.org/learn/gamification/home/info][Gamification]]
