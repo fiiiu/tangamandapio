@@ -1,3 +1,5 @@
 * Reading email
 
   * d: delete the current message
+  * [space]: next page
+  * -: previous page
