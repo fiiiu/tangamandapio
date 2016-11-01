@@ -16,6 +16,8 @@
 
   [[https://github.com/anacrolix/torrent][go torrent]]
 
+  https://github.com/shadow/shadow
+
 * cloud
 
   [[https://github.com/kelseyhightower/kubernetes-the-hard-way][kubernetes the hard way]]
