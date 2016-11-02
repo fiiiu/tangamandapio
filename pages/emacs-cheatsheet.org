@@ -1,3 +1,7 @@
 * Movement
 
   * Esc >: go to the end of the buffer.
+
+* Buffers
+
+  * C-x k: kill buffer
