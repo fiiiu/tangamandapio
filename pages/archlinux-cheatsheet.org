@@ -2,6 +2,7 @@
 
   (Based on https://wiki.archlinux.org/index.php/Installation_guide)
 
+
   * Download the ISO from https://www.archlinux.org/download/
 
   * Create a new KVM using the downloaded ISO, and 20G disk.
@@ -20,30 +21,21 @@
 
     fdisk /dev/sda
 
-    # root.
+    // root.
 
     n
-
     p
-
     <enter>
-
     <enter>
-
     +19G
 
-    # swap.
+    // swap.
 
     n
-
     p
-
     <enter>
-
     <enter>
-
     <enter>
-
     w
 
   * Format the partitions:
