@@ -8,15 +8,8 @@
 
   [[https://www.youtube.com/watch?v%3DYZpUCEXqmT8&index%3D12&list%3DPLxFC1MYuNgJT_ynbXGuYAZbSnUnq-6VQA][Comparative Analysis of Automation Frameworks (Testing).]]
 
-* Live and the universe
-
-  [[https://www.youtube.com/watch?v%3DyjxAArOkoA0][Europe is Kaput]]
 
 * Debian
-
-  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/Tutorial_functional_testing_of_Debian_packages.webm][Functional testing of Debian packages]]
-
-  [[http://gemmei.acc.umu.se/pub/debian-meetings/2015/debconf15/jenkinsdebianorg-session.webm][jenkins.debian.org]]
 
   [[http://saimei.acc.umu.se/pub/debian-meetings/2015/debconf15/Your_systemd_tool_box_dissecting_and_debugging_boot_and_services.webm][systemd debugging]]
 
