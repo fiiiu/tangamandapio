@@ -33,6 +33,7 @@
     charm build
     cd builds
     juju deploy ./remote-comms
+    juju expose remote-comms
     juju ssh remote-comms/0
 
  7. On the remote-comms machine:
