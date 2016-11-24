@@ -3,3 +3,4 @@
   * d: delete the current message
   * [space]: next page
   * -: previous page
+  * s: save message
