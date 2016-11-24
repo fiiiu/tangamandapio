@@ -1,3 +1,5 @@
+# Canonistack hub
+
  1. Make an m1.tiny canonistack instance with ssh and mosh ports open.
  2. Go to gandi and add the `canonistack` DNS entry for this instance.
  3. ssh into the new machine and:
@@ -24,20 +26,43 @@
 
  6. On the canonistack machine, follow the CDO shared controllers instructions.
 
-    juju add-model remote-comms --credential canonistack
     sudo snap install charm --devmode
     mkdir workspace
-    cd workspace
+
+# Remote communications
+
+ 1. On the canonistack machine:
+
+    cd ~/workspace
     git clone https://github.com/elopio/remote-comms
     cd remote-comms
     charm build
     cd builds
+    juju add-model remote-comms --credential canonistack
     juju deploy ./remote-comms
     juju expose remote-comms
     juju ssh remote-comms/0
 
- 7. On the remote-comms machine:
+ 2. On the remote-comms machine:
 
     * replace $freenode_password in ~/.weechat/irc.conf
     * replace $personal_email_password in ~/.msmtprc and ~/.offlineimaprc
     * replace $canonical_google_password in ~/.msmtprc and ~/.offlineimaprc
+
+# Remote devel
+
+ 1. On the canonistack machine:
+
+   cd ~/workspace
+   git clone https://github.com/elopio/remote-devel
+   cd remote-devel
+   charm build
+   cd builds
+   juju add-model remote-devel --credential canonistack
+   juju deploy ./remote-devel --constraints instance-type=cpu4-ram18-disk50-ephemeral20
+   juju expose remote-devel
+   juju ssh remote-devel/0
+
+ 2. On the remote-devel machine:
+
+   ssh-import-id elopio
