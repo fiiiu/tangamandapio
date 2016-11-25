@@ -4,7 +4,8 @@ Today we had our first testing day. We will keep doing this every Friday, and
 at the end of the session I will post a summary with links to follow up and
 learn more about the subject in case somebody is interested.
 
-You can watch the video by clicking the link below.
+You can watch the video by clicking the image below.
+
 [![Alt text](https://img.youtube.com/vi/bpi3DgON-pI/0.jpg)](https://www.youtube.com/watch?v=bpi3DgON-pI)
 
 For this session we had Kyle Fazzari talking about his work as the maintainer
