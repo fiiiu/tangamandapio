@@ -40,7 +40,7 @@ catches your attention.
 
 Special thanks to [Julia](https://twitter.com/la_juyis) and CoderEurope for joining us during the session. And of course to Kyle and the Nextcloud
 community for this amazing piece of free software that encourages everybody to
-take control over their data, in an really simple way.
+take control over their data, in a really simple way.
 
 You are all invited to join us the next time, which will be Friday, December
 2nd, again at [Ubuntu On-Air](https://ubuntuonair.com). The time and theme will be announced
