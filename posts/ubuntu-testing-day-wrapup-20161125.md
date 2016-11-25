@@ -1,5 +1,3 @@
-# Ubuntu testing day wrap up - 20161125
-
 Today we had our first testing day. We will keep doing this every Friday, and
 at the end of the session I will post a summary with links to follow up and
 learn more about the subject in case somebody is interested.
