@@ -218,10 +218,12 @@ TIMEZONE = "America/Costa_Rica"
 
 POSTS = (
     ("posts/*.tex", "blog", "post.tmpl"),
+    ("posts/*.md", "blog", "post.tmpl"),
 )
 PAGES = (
     ("pages/*.tex", "notebook", "story.tmpl"),
     ("pages/*.org", "notebook", "story.tmpl"),
+    ("pages/*.md", "notebook", "post.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
