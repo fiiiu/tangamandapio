@@ -17,6 +17,7 @@ before_install:
   - sudo apt-get install -y emacs24-nox libxml2-dev libxslt1-dev texlive org-mode pandoc pandoc-citeproc
 
 install:
+  - pip install --upgrade setuptools
   - pip install Nikola[extras]
   - nikola plugin -i orgmode
 
