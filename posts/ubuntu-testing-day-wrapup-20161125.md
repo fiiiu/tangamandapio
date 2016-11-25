@@ -12,8 +12,8 @@ For this session we had Kyle Fazzari talking about his work as the maintainer
 of the Nextcloud snap.
 
 You can find more info about the project in the
-[Nextcloud main page](http://elopio.net/blog/download-ubuntu/) and more info about the snap
-in [Kyle's blog](http://elopio.net/blog/download-ubuntu/).
+[Nextcloud main page](https://nextcloud.com/) and more info about the snap
+in [Kyle's blog](https://kyrofa.com/).
 
 We tested the snap using a virtual machine. To set one up you can use the
 following guides:
@@ -33,8 +33,8 @@ developers, you can add the flag --edge or --beta to that command.
 I wrote some steps to guide you getting started with the testing in this
 [gist](https://gist.github.com/elopio/735d995920ef5fb9d24eb6931f6686c0).
 
-And finally, if you want to join our community, we usually chat in
-https://rocket.ubuntu.com/
+And finally, if you want to join our community, we are usually in
+[Rocket Chat](https://rocket.ubuntu.com/).
 You can join the #community, #qa or #snapcraft channels, or any other that
 catches your attention.
 
@@ -43,5 +43,5 @@ community for this amazing piece of free software that encourages everybody to
 take control over their data, in an really simple way.
 
 You are all invited to join us the next time, which will be Friday, December
-2nd, again at https://ubuntuonair.com. The time and theme will be announced
+2nd, again at [Ubuntu On-Air](https://ubuntuonair.com). The time and theme will be announced
 soon. Or at least before it starts.
