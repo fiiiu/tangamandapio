@@ -45,6 +45,7 @@
 
  2. On the remote-comms machine:
 
+    * ssh-import-id elopio
     * replace $freenode_password in ~/.weechat/irc.conf
     * replace $personal_email_password in ~/.msmtprc and ~/.offlineimaprc
     * replace $canonical_google_password in ~/.msmtprc and ~/.offlineimaprc
