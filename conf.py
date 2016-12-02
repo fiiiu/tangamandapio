@@ -223,7 +223,7 @@ POSTS = (
 PAGES = (
     ("pages/*.tex", "notebook", "story.tmpl"),
     ("pages/*.org", "notebook", "story.tmpl"),
-    ("pages/*.md", "notebook", "post.tmpl"),
+    ("pages/*.md", "notebook", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
