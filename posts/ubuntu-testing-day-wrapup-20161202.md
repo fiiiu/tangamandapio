@@ -30,7 +30,8 @@ Then you can follow this
 
 Also you can test a real installation of Rocket Chat, joining
 [our community channel](https://rocket.ubuntu.com/channel/community), where we
-are available all day, every day.
+are available all day, every day. If you have a question, just ask. I am elopio
+in there.
 
 During the session we took a look at the [GitHub website](https://github.com),
 where many free software communities do their development in the open. They have
