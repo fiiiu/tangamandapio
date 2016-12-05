@@ -25,8 +25,7 @@ version of rocket chat with:
     $ sudo snap install rocketchat-server --edge
 
 Then you can follow this
-[gist with the initial steps to start testing the Rocket Chat snap]
-(https://gist.github.com/elopio/7e020a8353bb538c396749f2bda80fff)
+[gist with the initial steps to start testing the Rocket Chat snap](https://gist.github.com/elopio/7e020a8353bb538c396749f2bda80fff)
 
 Also you can test a real installation of Rocket Chat, joining
 [our community channel](https://rocket.ubuntu.com/channel/community), where we
@@ -35,8 +34,7 @@ in there.
 
 During the session we took a look at the [GitHub website](https://github.com),
 where many free software communities do their development in the open. They have
-a great [guide to start contributing to open source projects]
-(https://guides.github.com/activities/contributing-to-open-source/). Go on and
+a great [guide to start contributing to open source projects](https://guides.github.com/activities/contributing-to-open-source/). Go on and
 spread your love for free software in the form of bug reports :)
 
 The gratitude this week goes to our newly acquired staff members
