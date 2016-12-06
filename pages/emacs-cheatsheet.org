@@ -2,6 +2,8 @@
 
   * Esc >: go to the end of the buffer.
 
+  * M-f: move forward one word.
+
 * Buffers
 
   * C-x k: kill buffer
