@@ -30,7 +30,7 @@ If you find a bug, you can talk to the developers joining the
 
 While preparing the testing environment on this session we had a crash, and
 explained how easy it is to send the report to the Ubuntu developers by just
-clicking the \emph{Report problem...} button. The reports from all our users
+clicking the *Report problem...* button. The reports from all our users
 are in the [error tracker](https://errors.ubuntu.com/), along with a frequency
 graph and the links to bug reports where those crashes are being fixed.
 
