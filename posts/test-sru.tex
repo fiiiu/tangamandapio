@@ -17,8 +17,8 @@ features even in stable releases.
 
 These bug fixes, security patches and exceptional new features require a lot of
 testing, because right after they are published they will reach all the Ubuntu
-users that are in the stable release. And we and want that release to remain
-stable, never ever introduce a regression that will make those users unhappy.
+users that are in the stable release. And we want the release to remain stable,
+never ever introduce a regression that will make those users unhappy.
 
 We call all of them
 \href{https://wiki.ubuntu.com/StableReleaseUpdates}{Stable Release Updates},
@@ -35,7 +35,7 @@ every now and then. It's not likely to be critical, but it can bother you if it
 happens on the machine you need to do your work, or other stuff. And if
 somebody makes a mistake, you might need to reinstall the system.
 
-Now you will have to find a package that needs testing.
+You will also have to find a package that needs testing.
 \href{http://snapcraft.io}{Snapcraft} is one of the few exceptions allowed to
 land in a stable release every week. So lets use it as an example. Lets say you
 want to help us testing the upcoming release of snapcraft in Ubuntu 16.04.
@@ -50,8 +50,8 @@ is approved and lands in the archive. So in a terminal, write:
   $ sudo apt install snapcraft
 \end{verbatim}
 
-Or replace \empth{snapcraft} to whatever package you are testing. If you are
-doing this just during the weekend after I am writing this, the released
+Or replace \emph{snapcraft} with whatever package you are testing. If you are
+doing it just during the weekend after I am writing this, the released
 version of snapcraft will be 2.23. You can check it with:
 
 \begin{verbatim}
@@ -83,12 +83,21 @@ tab. And check the item that says \emph{Pre-released updates}.
   \caption{Deverloper Options tab of the Software & Updates application}
 \end{center}
 
-This will prompt you for your password. Enter it, and then click the
+This will prompt for your password. Enter it, and then click the
 \emph{Close} button. You will be asked if you want to reload your sources, so
 yes, click the \emph{Reload} button.
 
-Finally try to upgrade. If there is an available update in the proposed pocket
-for the packet you are testing, now you will get it.
+\begin{center}
+  \href{
+    https://archive.org/download/elopio-screenshots2/sru/3-reload.png}{
+    \includegraphics[width=500px]{
+    https://archive.org/download/elopio-screenshots2/sru/3-reload.png}
+  }
+  \caption{Reload sources}
+\end{center}
+
+Finally try to upgrade. If there is a newer version available in the proposed
+pocket for the packet you are testing, now you will get it.
 
 \begin{verbatim}
   $ sudo apt install snapcraft
