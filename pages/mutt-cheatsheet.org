@@ -4,3 +4,7 @@
   * [space]: next page
   * -: previous page
   * s: save message
+
+* Writing email
+
+  * g: reply all (reply group)
