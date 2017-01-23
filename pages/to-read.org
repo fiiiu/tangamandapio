@@ -37,6 +37,8 @@
 
   [[https://raft.github.io/raft.pdf][raft]]
 
+  [[https://research.microsoft.com/en-us/um/people/lamport/tla/hyperbook.html][tla hyperbook]]
+
 * QA
 
   [[http://www.developsense.com/blog/2009/08/testing-vs-checking/][Testing vs. Checking]]
