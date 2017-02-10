@@ -44,15 +44,15 @@ Once you have Trusty with snapd ready, try a few commands:
     $ hello-world
     $ snap find something
 
-[![screenshot of snaps running in Trusty](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)
+[![screenshot of snaps running in Trusty](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps-bigger.png)](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps-bigger.png)
 
 Keep searching for snaps until you find one that's interesting. Install it,
 try it, and let us know how it goes.
 
 If you find something wrong, please
-[report a bug](https://bugs.launchpad.net/snapd/+filebug). If you are new to
-the Ubuntu community or get lost on the way, come and join us in
-[Rocket Chat](https://rocket.ubuntu.com/channel/community).
+[report a bug](https://bugs.launchpad.net/snapd/+filebug) with the `trusty`
+tag. If you are new to the Ubuntu community or get lost on the way, come and
+join us in [Rocket Chat](https://rocket.ubuntu.com/channel/community).
 
 And after a good session of testing, sit down, relax, and get ohmygiraffe. With
 love from [popey](https://twitter.com/popey):
