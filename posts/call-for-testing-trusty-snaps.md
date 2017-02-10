@@ -17,7 +17,7 @@ of all this. If you are a developer, you have to prepare only one release and
 it will just work in all the supported Ubuntu releases.
 
 Awesome, right? The Ubuntu devs have been doing a great job. snapd has already
-landed in the trusty archive, and we have been running many manual and
+landed in the Trusty archive, and we have been running many manual and
 automated tests on it. So we would like now to invite the community to test it,
 explore weird paths, try to break it. We will appreciate it very much, but all
 of those Trusty users out there will love it, when they receive loads of new
@@ -44,7 +44,7 @@ Once you have Trusty with snapd ready, try a few commands:
     $ hello-world
     $ snap find something
 
-[![screenshot of snaps running in trusty](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)
+[![screenshot of snaps running in Trusty](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)](https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps.png)
 
 Keep searching for snaps until you find one that's interesting. Install it,
 try it, and let us know how it goes.
