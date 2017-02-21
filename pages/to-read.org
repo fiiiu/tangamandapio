@@ -4,6 +4,8 @@
 
   [[http://garrett.damore.org/2015/09/on-go-portability-and-system-interfaces.html?utm_source%3Dgolangweekly&utm_medium%3Demail][On Go, Portability, and System Interfaces]]
 
+  [[https://medium.com/@povilasve/go-advanced-tips-tricks-a872503ac859#.h0rww3rgo][Go advanced testing tips & tricks]]
+
 * anonymity
 
   [[http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF][Blind signatures for untraceable payments]]
@@ -43,10 +45,17 @@
 
   [[http://www.developsense.com/blog/2009/08/testing-vs-checking/][Testing vs. Checking]]
 
+  [[https://blog.gopheracademy.com/advent-2016/how-to-write-good-tests-for-solid-code/][Writing good unit tests for SOLID Go ]]
+
 * security
 
   [[http://blog.invisiblethings.org/papers/2015/state_harmful.pdf][State considered harmful]]
   [[http://static.usenix.org/legacy/events/sec09/tech/full_papers/sec09_browser.pdf][Crying Wolf: An Empirical Study of SSL Warning Effectivenes]]
+
 * linux
 
   [[https://lwn.net/Articles/531114/#series_index][namespaces]]
+
+* diversity
+
+  [[https://www.sifive.com/blog/2017/02/08/women-in-open-source-you-do-belong-here/][Women in Open Source: You DO Belong Here]]
