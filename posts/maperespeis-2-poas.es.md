@@ -1,8 +1,7 @@
 El domingo pasado fuimos a hacer mapas libres al
 [Volcán Poás](https://es.wikipedia.org/wiki/Volc%C3%A1n_Po%C3%A1s).
 
-[![Cráter del Volcán Poás](https://d1cuyjsrcm0gby.cloudfront.net/BHp7eM8RAbbhkLWc6XyR6g/thumb-2048.jpg)](https://www.mapillary.com/map/im/BHp7eM8RAbbhkLWc6XyR6g)
-(clic en la foto para verla en el mapa)
+<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=BHp7eM8RAbbhkLWc6XyR6g&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
 
 Esta es la segunda excursión geek del JaquerEspéis. De la primera aprendimos
 que había que esperar al verano porque
@@ -46,7 +45,7 @@ combinación de medios de transporte, aplicaciones para asistir en la toma de
 decisiones al diseñar el futuro de una ciudad, y muchas otras cosas más. Todo
 basado en conocimiento compartido y comunidad.
 
-[![Tour 360 del Volcán Poás](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://www.mapillary.com/map/im/dYPJnZINW7nHTEgJ7g9OEA)
+<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
 
 Al hacer clic en la imágen de arriba entran al tour virtual en Mapillary. Como
 lo grabamos con la cámara 360, pueden hacer clic y arrastrar con el mouse para
