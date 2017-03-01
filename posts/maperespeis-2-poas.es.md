@@ -45,9 +45,9 @@ combinación de medios de transporte, aplicaciones para asistir en la toma de
 decisiones al diseñar el futuro de una ciudad, y muchas otras cosas más. Todo
 basado en conocimiento compartido y comunidad.
 
-<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
+<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=classic" frameborder="0"></iframe>
 
-Al hacer clic en la imágen de arriba entran al tour virtual en Mapillary. Como
+La imagen de arriba es el tour virtual en Mapillary. Como
 lo grabamos con la cámara 360, pueden hacer clic y arrastrar con el mouse para
 ver todos los ángulos. También pueden hacer clic arriba, en el botón de
 reproducir para seguir el camino que tomamos. O pueden hacer clic en cualquier

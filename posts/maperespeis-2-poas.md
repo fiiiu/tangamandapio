@@ -47,9 +47,9 @@ transportation, on applications to assist decission making during the design of
 the future of a city, and many other things. All of this based on shared
 knowledge and community.
 
-<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
+<iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=classic" frameborder="0"></iframe>
 
-When you click the image above it will take you to the virtual tour in
+The image above is the virtual tour in
 Mapillary. As we recorded it with the 360 cam, you can click and drag with the
 mouse to see all the angles. You can also click above, in the play button to
 follow the path we took. Or you can click in any of the green dots in the map
