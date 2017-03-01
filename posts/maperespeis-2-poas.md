@@ -2,8 +2,7 @@ Last Sunday we went to the
 [Poás Volcano](https://en.wikipedia.org/wiki/Po%C3%A1s_Volcano)
 to make free maps.
 
-[![Crater of the Poás Volcano](https://d1cuyjsrcm0gby.cloudfront.net/BHp7eM8RAbbhkLWc6XyR6g/thumb-2048.jpg)](https://www.mapillary.com/map/im/BHp7eM8RAbbhkLWc6XyR6g)
-(click in the picture to view it in the map)
+<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=BHp7eM8RAbbhkLWc6XyR6g&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
 
 This is the second geek outing of the JaquerEspéis. From the first one we
 learned that we had to wait until summer because
@@ -48,7 +47,7 @@ transportation, on applications to assist decission making during the design of
 the future of a city, and many other things. All of this based on shared
 knowledge and community.
 
-[![360 tour 360 of the Poás Volcano](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://www.mapillary.com/map/im/dYPJnZINW7nHTEgJ7g9OEA)
+<iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&filter=%5B%22all%22%5D&map_filter=%5B%22all%22%5D&image_key=dYPJnZINW7nHTEgJ7g9OEA&client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&style=photo" frameborder="0"></iframe>
 
 When you click the image above it will take you to the virtual tour in
 Mapillary. As we recorded it with the 360 cam, you can click and drag with the
@@ -61,6 +60,7 @@ Charles for being our guides, and for filling up the trip with interesting
 information about flora, fauna, geology and historic importance of El Poás.
 
 [![Miembros del MaperEspeis](https://archive.org/download/maperespeis-poas/20170226_110006.jpg)](https://archive.org/download/maperespeis-poas/20170226_110006.jpg)
+
 ([More pictures and videos here](https://archive.org/details/maperespeis-poas))
 
 The next MapperSpace will be on march the 12th.
