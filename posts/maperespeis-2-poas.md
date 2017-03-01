@@ -31,7 +31,7 @@ Later, in our homes, we upload, publish and share all the collected data. These
 is useful to improve the free maps of
 [OpenStreetMap](https://en.wikipedia.org/wiki/OpenStreetMap). We add from
 really simple things like
-[the location of a trash bin](https://archive.org/details/maperespeis-poas)
+[the location of a trash bin](https://archive.org/download/maperespeis-poas/20170226_105554.jpg)
 to really important things like how accessible is the place for a person in a
 wheelchair, together with the location of all the accesses or the places that
 have a lack of them. Each person improves the map a little, in the region that
@@ -48,7 +48,7 @@ transportation, on applications to assist decission making during the design of
 the future of a city, and many other things. All of this based on shared
 knowledge and community.
 
-[![360 tour 360 of the Poás Volcano](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)
+[![360 tour 360 of the Poás Volcano](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://www.mapillary.com/map/im/dYPJnZINW7nHTEgJ7g9OEA)
 
 When you click the image above it will take you to the virtual tour in
 Mapillary. As we recorded it with the 360 cam, you can click and drag with the

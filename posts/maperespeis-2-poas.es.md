@@ -29,7 +29,7 @@ Luego, en nuestras respectivas casas, subimos, publicamos y compartimos todos
 los datos recolectados. Estos nos sirven para mejorar los mapas libres de
 [OpenStreetMap](https://es.wikipedia.org/wiki/OpenStreetMap). Agregamos desde
 cosas tan sencillas como
-[la ubicación de un basurero](https://archive.org/details/maperespeis-poas)
+[la ubicación de un basurero](https://archive.org/download/maperespeis-poas/20170226_105554.jpg)
 hasta cosas tan importantes como qué tan accesible es el lugar para una persona
 en silla de ruedas, junto con la ubicación de todos estos accesos o las partes
 en las que faltan. Cada persona mejora el mapa un poquito, en la zona que
@@ -46,7 +46,7 @@ combinación de medios de transporte, aplicaciones para asistir en la toma de
 decisiones al diseñar el futuro de una ciudad, y muchas otras cosas más. Todo
 basado en conocimiento compartido y comunidad.
 
-[![Tour 360 del Volcán Poás](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)
+[![Tour 360 del Volcán Poás](https://d1cuyjsrcm0gby.cloudfront.net/dYPJnZINW7nHTEgJ7g9OEA/thumb-2048.jpg)](https://www.mapillary.com/map/im/dYPJnZINW7nHTEgJ7g9OEA)
 
 Al hacer clic en la imágen de arriba entran al tour virtual en Mapillary. Como
 lo grabamos con la cámara 360, pueden hacer clic y arrastrar con el mouse para
