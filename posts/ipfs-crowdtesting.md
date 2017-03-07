@@ -93,9 +93,9 @@ stable release using the four available channels in the Ubuntu store:
    to edge channel from travis, just as with any other revision.
  * Travis notifies me about this revision.
  * I install this tagged revision from edge, and run a super quick test to make
-   sure that the server starts.
+   sure that the IPFS server starts.
  * If it starts, I push the snap to the beta channel.
- * With couple of my friends, we run a
+ * With a couple of my friends, we run a
    [suite of smoke tests](https://gist.github.com/elopio/7492a28bd1aef6c4a86b5dcf5d5cb65b#file-ipfs-smoke-tests-md).
  * If everything goes well, I push the snap to the candidate channel.
  * I notify the community of Ubuntu testers about a new version in the candidate
