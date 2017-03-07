@@ -27,7 +27,7 @@ like IPFS to get into the Ubuntu archives for those releases. There will be no
 simple way for all those users to enjoy IPFS, they would have to use a
 [Personal Package Archive](https://en.wikipedia.org/wiki/Personal_Package_Archive)
 or install the software from a
-[tarball](https://en.wikipedia.org/wiki/Tar_(computing). Both methods are
+[tarball](https://en.wikipedia.org/wiki/Tar_(computing)). Both methods are
 complex with high security risks, and both require the users to put a lot of
 trust on the developers, more than what they should ever trust anybody.
 
