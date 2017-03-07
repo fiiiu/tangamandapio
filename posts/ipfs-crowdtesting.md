@@ -133,11 +133,7 @@ the user is always in control of which access is permitted to the application.
 
 This way upstream developers can go faster but without exposing their users to
 unnecessary risks. And they just need a simple snapcraft.yaml file and to define
-their own continuous delivery pipeline, on their own timeline. If you want to
-release your project to the Ubuntu store, take a look at the
-[snapcraft docs](https://snapcraft.io/), the
-[Ubuntu tutorials](https://tutorials.ubuntu.com/), and come talk to us in
-[Rocket Chat](https://rocket.ubuntu.com/channel/snapcraft).
+their own continuous delivery pipeline, on their own timeline.
 
 By removing the distro as the intermediary between the developers and their
 users, we are also making a new world full of possibilities for the Ubuntu
@@ -175,3 +171,8 @@ people for their help and feedback:
  * howefield
 
 <3
+
+If you want to release your project to the Ubuntu store, take a look at the
+[snapcraft docs](https://snapcraft.io/), the
+[Ubuntu tutorials](https://tutorials.ubuntu.com/), and come talk to us in
+[Rocket Chat](https://rocket.ubuntu.com/channel/snapcraft).
