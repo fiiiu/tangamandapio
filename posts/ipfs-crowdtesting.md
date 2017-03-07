@@ -16,7 +16,7 @@ try on Ubuntu Trusty, Xenial or later by running:
 
     $ sudo snap install ipfs
 
-[![screenshot of the IPFS peers](https://archive.org/download/elopio-screenshots2/ipfs-peers.png)
+[![screenshot of the IPFS peers](https://archive.org/download/elopio-screenshots2/ipfs-peers.png)](https://archive.org/download/elopio-screenshots2/ipfs-peers.png)
 
 So, here's one of the problems we are trying to solve. We have millions of users
 on the Trusty version of Ubuntu, released during 2014. We also have millions of
@@ -156,7 +156,7 @@ release also to armhf and arm64 architectures to get IPFS into the
 developers are not stopping, they keep releasing new interesting features. As I
 said, plenty of opportunities for us as distro contributors.
 
-[![screenshot of the IPFS snap stats](https://archive.org/download/elopio-screenshots2/ipfs-stats.png)
+[![screenshot of the IPFS snap stats](https://archive.org/download/elopio-screenshots2/ipfs-stats.png)](https://archive.org/download/elopio-screenshots2/ipfs-stats.png)
 
 I'd like to thank everybody who tested the IPFS snap, specially the following
 people for their help and feedback:
