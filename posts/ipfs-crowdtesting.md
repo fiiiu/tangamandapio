@@ -22,7 +22,7 @@ So, here's one of the problems we are trying to solve. We have millions of users
 on the Trusty version of Ubuntu, released during 2014. We also have millions of
 users on the Xenial version, released during 2016. Those two versions are stable
 now, and following the Ubuntu policies, they will get only security updates for
-5 years. That means that it's very hard, almost imposible, for a young project
+5 years. That means that it's very hard, almost impossible, for a young project
 like IPFS to get into the Ubuntu archives for those releases. There will be no
 simple way for all those users to enjoy IPFS, they would have to use a
 [Personal Package Archive](https://en.wikipedia.org/wiki/Personal_Package_Archive)
