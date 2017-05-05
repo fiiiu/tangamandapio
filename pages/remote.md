@@ -2,7 +2,7 @@
 
  1. Make an m1.small canonistack instance with ssh and mosh ports open.
  2. Go to gandi and add the `canonistack` DNS entry for this instance.
- 3. ssh into the new machine and:
+ 3. ssh (with `-i .canonistack/elopio_lcy02.key`) into the new machine and:
 
     sudo adduser elopio
     su elopio
