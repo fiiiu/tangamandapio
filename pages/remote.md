@@ -33,7 +33,7 @@ Drop the old ssh keys for remote-devel on launchpad and github.
     mkdir ~/.canonistack
     mv /tmp/novarc_lcy02 ~/.canonistack/
     source ~/.canonistack/novarc_lcy02
-    sudo snap install juju --beta --devmode
+    sudo snap install juju --beta --classic
 ```
 
  6. On the canonistack machine, follow the CDO shared controllers instructions.
