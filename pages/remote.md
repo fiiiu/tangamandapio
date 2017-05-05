@@ -13,6 +13,7 @@ Drop the old ssh keys for remote-devel on launchpad and github.
     su elopio
     ssh-import-id elopio
     exit
+    exit
 ```
 
  4. ssh into the machine again as elopio and:
