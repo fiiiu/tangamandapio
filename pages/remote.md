@@ -1,6 +1,6 @@
 # Canonistack hub
 
- 1. Make an m1.tiny canonistack instance with ssh and mosh ports open.
+ 1. Make an m1.small canonistack instance with ssh and mosh ports open.
  2. Go to gandi and add the `canonistack` DNS entry for this instance.
  3. ssh into the new machine and:
 
