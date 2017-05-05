@@ -39,7 +39,7 @@ Drop the old ssh keys for remote-devel on launchpad and github.
  6. On the canonistack machine, follow the CDO shared controllers instructions.
 
 ```
-    sudo snap install charm --devmode
+    sudo snap install charm --classic
     mkdir workspace
 ```
 
