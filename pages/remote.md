@@ -1,3 +1,7 @@
+# Old keys
+
+Drop the old ssh keys for remote-devel on launchpad and github.
+
 # Canonistack hub
 
  1. Make an m1.small canonistack instance with ssh and mosh ports open.
