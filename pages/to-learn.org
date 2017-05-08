@@ -9,6 +9,8 @@
 
   [[https://www.edx.org/course/introduction-openstack-linuxfoundationx-lfs152x][Openstack]]
 
+  [[https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615][kubernetes]]
+
 * FPGA
 
   [[http://www.nandland.com/articles/fpga-101-fpgas-for-beginners.html][FGPA Fundamentals]]
