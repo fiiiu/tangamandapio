@@ -41,8 +41,4 @@
 
   [[https://www.coursera.org/learn/subsistence-marketplaces#creators][Subsistence Marketplaces]]
 
-* Diversity
-
-  [[https://training.linuxfoundation.org/linux-courses/open-source-compliance-courses/inclusive-speaker-orientation][Inclusive Speaker Orientation]]
-
-  [[https://www.coursera.org/specializations/team-building][Culture-Driven Team Building]]
+  [[https://www.youtube.com/playlist?list%3DPLXS8JJHIn4nEv_LcXIaklH_QAZaDEVD8q][blockstack]]
