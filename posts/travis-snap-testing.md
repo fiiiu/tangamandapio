@@ -1,17 +1,16 @@
 [Travis CI](https://travis-ci.org/) offers a great continuous integration
-service for the projects hosted in GitHub. With it you can run tests, deliver
-artifacts and deploy services on pull requests, when they are merged, or with
-some other frecuency.
+service for the projects hosted on GitHub. With it, you can run tests, deliver
+artifacts and deploy applications every time you push a commit, on pull requests, after they are merged, or with some other frequency.
 
-Last week they
+Last week Travis CI
 [updated the Ubuntu 14.04 (Trusty) machines](https://blog.travis-ci.com/2017-06-21-trusty-updates-2017-Q2-launch)
-that run these jobs. This update came with a nice surprise for everybody
+that run your tests and deployment steps. This update came with a nice surprise for everybody
 working to deliver software to Linux users, because it is now possible to
 install [snaps](https://snapcraft.io) in Travis!
 
 I've been excited all week telling people about all the doors that this opens;
 but if you have been following my adventures in the Ubuntu world, by now you
-can problably guess that I'm mostly thinking about all the potential this has
+can probably guess that I'm mostly thinking about all the potential this has
 for automated testing. For the automation of user acceptance tests.
 
 User acceptance tests are executed from the point of view of the user, with
@@ -27,7 +26,7 @@ real users, the better.
 Snaps are great for the automation of user acceptance tests because they are
 immutable and they bundle all their dependencies. With this we can make sure
 that your snap will work the same on any of the operating systems and
-architectures that support snaps. The snapd service takes care of hidding
+architectures that support snaps. The [snapd](https://snapcraft.io/docs/core/snapd) service takes care of hiding
 the differences and presenting a consistent execution environment for the snap.
 So, getting a green execution of these tests in the Trusty machine of Travis is
 a pretty good indication that it will work on all the active releases of
@@ -37,7 +36,7 @@ Let me show you an example of what I'm talking about, obviously using my
 favourite snap called IPFS. There is
 [more information about IPFS in my previous post](http://elopio.net/blog/ipfs-crowdtesting/).
 
-This is the packaging metadata for the IPFS snap, a single `snapcraft.yaml`
+Check below the packaging metadata for the IPFS snap, a single `snapcraft.yaml`
 file:
 
 ```
@@ -81,7 +80,7 @@ your own project, the
 [tutorial to create your first snap](https://tutorials.ubuntu.com/tutorial/create-first-snap)
 is a good place to start.
 
-What's important here is that if you run `snapcraft` using this yaml file, you
+What's important here is that if you run `snapcraft` using the snapcraft.yaml file above, you
 will get the IPFS snap. If you install that snap, then you can test it from the
 point of view of the user. And if the tests work well, you can push it to the
 edge channel of the Ubuntu store to start the crowdtesting with your community.
@@ -116,7 +115,7 @@ script:
   - sudo snap install *.snap --dangerous
 ```
 
-And once it is installed, we can run it and check that it works as expected.
+And once the snap is installed, we can run it and check that it works as expected.
 Those checks are our automated user acceptance test. IPFS has a CLI
 client, so we can just run commands and verify outputs with grep. Or we can get
 fancier using [shunit2](https://github.com/kward/shunit2) or
@@ -133,8 +132,8 @@ script:
   - [...]
 ```
 
-If one of those checks fail, Travis will mark the execuition as failed and stop
-our release process until we fix them. If all of them pass, then this version
+If one of those checks fail, Travis will mark the execution as failed and stop
+our release process until we fix them. If instead, all of the checks pass, then this version
 is good enough to put into the store, where people can take it and run
 exploratory tests to try to find problems caused by weird scenarios that we
 missed in the automation. To help with that we have the
