@@ -101,6 +101,8 @@ And in the `config.py` file, set the following values:
 Run it again with the errbot command, but this time join the #snappy channel
 in irc.freenode.net, and write in there `!tryme`. It works ! :)
 
+[![screenshot of errbot on IRC](https://archive.org/download/elopio-screenshots2/errbot/errbot-snap.png)](https://archive.org/download/elopio-screenshots2/errbot/errbot-snap.png)
+
 So, this is very simple, but let's package it now to start with the good
 practice of continuous delivery before it gets more complicated. As usual, it
 just requires a `snapcraft.yaml` file with all the packaging info and metadata:
