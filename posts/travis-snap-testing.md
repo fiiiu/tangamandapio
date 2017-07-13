@@ -137,9 +137,9 @@ our release process until we fix them. If instead, all of the checks pass, then 
 is good enough to put into the store, where people can take it and run
 exploratory tests to try to find problems caused by weird scenarios that we
 missed in the automation. To help with that we have the
-`snapcraft enable-ci travis` command, and an upcoming tutorial to guide you
+`snapcraft enable-ci travis` command, and a tutorial to guide you
 step by step
-[setting up the continuous delivery from Travis CI](https://docs.google.com/document/d/1vPUMH9UNOP8AqjhcslMZ5LQHMV3xvMYYKb7slC4s_Gc/edit?usp=sharing).
+[setting up the continuous delivery from Travis CI](https://tutorials.ubuntu.com/tutorial/continuous-snap-delivery-from-travis-ci#0).
 
 For the IPFS snap we had for a long time a manual smoke suite, that our amazing
 [community of testers](https://forum.snapcraft.io/t/call-for-testing-ipfs/97)
