@@ -31,7 +31,7 @@
 > dream. Nothing is consistent,  
 > save for the essence of the place.
 >
-> We are friend here on this vessel,  
+> We are friends here on this vessel,  
 > and we do not harm each other.
 >
 > And this is odd.  
