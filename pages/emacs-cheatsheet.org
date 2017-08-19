@@ -4,6 +4,8 @@
 
   * M-f: move forward one word.
 
+  * C-e: move to the end of the line.
+
 * Delete
 
   * C-d: delete forward one character.
