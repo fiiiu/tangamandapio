@@ -2,6 +2,8 @@
 
   * Esc >: go to the end of the buffer.
 
+  * C-f: move forward one character.
+
   * M-f: move forward one word.
 
   * C-e: move to the end of the line.
