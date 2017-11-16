@@ -44,3 +44,5 @@
   [[https://www.youtube.com/playlist?list%3DPLXS8JJHIn4nEv_LcXIaklH_QAZaDEVD8q][blockstack]]
 
   [[https://www.youtube.com/playlist?list%3DPL2FF649D0C4407B30][Learning to Learn]]
+  
+  [[https://learn.edx.org/msft-pc-intl-softdev/][International Software Development]]
