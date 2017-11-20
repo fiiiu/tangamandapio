@@ -45,4 +45,6 @@
 
   [[https://www.youtube.com/playlist?list%3DPL2FF649D0C4407B30][Learning to Learn]]
   
+  [[https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014/about][Compilers]]
+  
   [[https://learn.edx.org/msft-pc-intl-softdev/][International Software Development]]
