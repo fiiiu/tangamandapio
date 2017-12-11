@@ -59,4 +59,4 @@ las que viaja. Una vez que se conecte a una red wifi, suba las imágenes y
 véalas aparecer en Mapillary.com.
 
 Puede unirse a la comunidad de maperos y maperas de Costa Rica en
-https://www.facebook.com/maperespeis/
+[https://www.facebook.com/maperespeis/]([https://www.facebook.com/maperespeis/)
