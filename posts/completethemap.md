@@ -50,6 +50,8 @@ participantes pueden ganar aumentando los km de nuevas rutas que capturan, la
 cantidad de imágenes que toman, y el número de participantes que se unen para
 ayudarles.
 
+[![CompletetheMap](https://ia801202.us.archive.org/4/items/jaquerespeis-mapas/complethemap/complethemap.png)](https://ia801202.us.archive.org/4/items/jaquerespeis-mapas/complethemap/complethemap.png)
+
 Actualmente, 23 ciudades de 17 países se han registrado para el #CompletetheMap
 global.
 
