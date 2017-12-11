@@ -20,13 +20,14 @@ mundo.
 Algunos usos prácticos de estos datos incluyen el análisis de la infraestructura
 para bicicletas a lo largo de una ciudad, reducción de riesgos antes y después de
 desastres, movilidad urbana, y puntos de reunión. #CompletetheMap viene a impulsar
-este estilo rápido de recolección de datos en un área específica. La idea de
-#CompletetheMap es simple. El área seleccionada se divide en zonas, y personas
+este estilo rápido de recolección de datos en un área específica. La idea
+de #CompletetheMap es simple. El área seleccionada se divide en zonas, y personas
 miembros de la comunidad local colaboran para capturar imágenes en cada zona.
 Conforme el porcentaje de fotos de calles y caminos aumenta, la zona cambia de
 color de rojo a naranja, y de naranja a verde.
 
-#CompletetheMap empezó en mayo de este año y ya se ha realizado en ciudades como
+El reto #CompletetheMap empezó en mayo de este año y ya se ha realizado en ciudades
+como
 [Brasilia](https://mapillary.github.io/mapillary_greenhouse/ctm/brasilia/),
 [Moscú](https://mapillary.github.io/mapillary_greenhouse/challenge/moscow/),
 [Berlín](https://mapillary.github.io/mapillary_greenhouse/challenge/berlin/) y
@@ -38,9 +39,9 @@ personas puede recolectar. Brasilia se ha concentrado en características de
 calles y puntos de interés. Moscú se reunió para capturar fotos de algunas de
 las carreteras más nuevas alrededor del centro de la ciudad. Berlín, la primera
 en participar en el reto de #CompletetheMap, ayudó a prepararlo recolectando
-muchas de las calles más pequeñas y rutas peatonales. Luego está Ottawa, un
-#CompletetheMap centrado en infraestructura para bicicletas. En este reto, 20
-personas lograron recolectar medio millón de imágenes y casi 2000 km de
+muchas de las calles más pequeñas y rutas peatonales. Luego está Ottawa,
+un #CompletetheMap centrado en infraestructura para bicicletas. En este reto,
+20 personas lograron recolectar medio millón de imágenes y casi 2000 km de
 cobertura nueva.
 
 El reto global le permite a cualquier persona seguir su progreso relativo a
