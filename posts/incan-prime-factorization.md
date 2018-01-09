@@ -6,7 +6,7 @@
 > and trying to make them coincide with the resulting numbers of calculations
 > from consulting the stars. [...].
 > The purpose that lead the indians to such practice was to entertain, with
-> this complicated "rebus", the evil spirits, who would strive to untie the
+> this complicated "rebus", the evil spirits, who would struggle to untie the
 > knots in the strings and find this magical numbering [...].
 
 on Estudio sobre los quipus, from Carlos Radicati di Primeglio.
