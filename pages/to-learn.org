@@ -48,3 +48,5 @@
   [[https://lagunita.stanford.edu/courses/Engineering/Compilers/Fall2014/about][Compilers]]
   
   [[https://learn.edx.org/msft-pc-intl-softdev/][International Software Development]]
+  
+  [[https://www.coursera.org/specializations/leading-teams][Leading people and teams]]
