@@ -131,9 +131,9 @@ the validate condition
 `super.validate() || (isInWhitelist(msg.sender) && !hasEnded)`.
 
 Of course, we will use multiple inheritance to form the "deadly diamond of 
-death", and we start to get nervous because now it sounds veeery risky :)
+death". At this point I start to get nervous because now it sounds veeery risky :)
 
-Let's define the
+Let's first try by defining the
 `contract PreSaleWithCapCrowdsale is PreSaleWhitelistedCrowdsale, CappedCrowdsale`,
 From what we learned before, this will result in the linearization
 `PreSaleWithCapCrowdsale`→ `PreSaleWhitelistedCrowdsale`→ `CappedCrowdsale`→ `Crowdsale`,
@@ -144,14 +144,13 @@ and thus, the `validate` condition of `PreSaleWithCapCrowdsale` will be:
 ```
 
 Pay close attention to the resulting condition, and notice that if a
-whitelisted investor buys token before the crowdsale has ended, she will be
+whitelisted investor buys tokens before the crowdsale has ended, she will be
 able to bypass the hard cap, and buy as many tokens as she wants.
 
-Let's fix it, just by swapping the order on
-`contract PreSaleWithCapCrowdsale is CappedCrowdsale, PreSaleWhitelistedCrowdsale`.
+That's not good. Let's fix it, just by swapping the order on
+`contract PreSaleWithCapCrowdsale is CappedCrowdsale, PreSaleWhitelistedCrowdsale`,
 which will give us the linearization
 `PreSaleWithCapCrowdsale`→ `CappedCrowdsale`→ `PreSaleWhitelistedCrowdsale`→ `Crowdsale`,
-
 and the `validate` condition will be:
 
 ```
@@ -162,13 +161,15 @@ Now, if the purchase attempt goes above the cap, the transaction will be
 reverted even if the sender is whitelisted.
 
 It's very easy to think that the parent contracts will just be magically merged
-into something that will make sense to our use case, or to make a mistake when
+into something that will make sense for our use case, or to make a mistake when
 we linearize them in our mind. Every use case will be different, so our
-framework can't save you from the work of organizing your contracts' hierarchy;
-but, we can make our contracts clearer and make sure that they will just work
+framework can't save you from the work of organizing your contracts' hierarchy.
+But, we can make our contracts clearer and make sure that they will just work
 for simple cases.
 
-Since `zeppelin-solidity 1.7` we have a suite of crowdsale contracts fully
+Since
+[zeppelin-solidity 1.7](https://github.com/OpenZeppelin/zeppelin-solidity/releases/tag/v1.7.0)
+we have a suite of crowdsale contracts fully
 rewritten with all of this in mind.
 
 The base contract
@@ -239,7 +240,7 @@ contract WhitelistedTimedCappedCrowdsale is TimedCrowdsale, WhitelistedCrowdsale
 It doesn't matter how you order the parents, all the conditions will be
 checked always. But, take this with a grain of salt. If your parent contracts
 are not super clear, they might be hiding an `||` condition in a few
-hard-to-read code statements. And, all the conditions will be checked but the
+hard-to-read code statements. And, all the conditions will be checked, but the
 order will be different. This can have different side-effects on Solidity, some
 paths will execute statements that other paths won't, and it could lead an
 attacker to find a specific path that is vulnerable.
@@ -265,8 +266,8 @@ I encourage you to join me on these experiments, to try different combinations
 of crowdsales and to play switching the order of the inheritance graph. We will
 learn more about the resulting code that Solidity compiles, we will improve our
 mental picture of the execution stack, and we will practice writing the tests
-that will fully cover all the possible paths. If you have questions, you find
-errors on the implementations in OpenZeppelin, or you find an alternative
+that will fully cover all the possible paths. If you have questions, find
+errors on the implementations in OpenZeppelin, or find an alternative
 implementation that will make it easier to develop crowdsales on top of our
 contracts, please
 [let us know by sending a message to the slack channel](https://slack.openzeppelin.org/).
