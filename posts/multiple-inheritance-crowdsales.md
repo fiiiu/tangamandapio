@@ -66,15 +66,15 @@ then `D.f` will call:
 
 ```
 somethingD();
-somethingB();
 somethingC();
+somethingB();
 somethingA();
 ```
 
-When `D` inherits from `B, C`, the linearization results in D→ B→ C→ A. This
-means that `super` on `D` calls `B`. And you might be a little surprised by the
-fact that calling `super` on `B` will result on a call to `C` instead of `A`,
-even though `B` doesn't inherit from `C`. Finally, `super` on `C` will call
+When `D` inherits from `B, C`, the linearization results in D→ C→ B→ A. This
+means that `super` on `D` calls `C`. And you might be a little surprised by the
+fact that calling `super` on `C` will result on a call to `B` instead of `A`,
+even though `C` doesn't inherit from `B`. Finally, `super` on `B` will call
 `A`.
 
 If `D` is defined like:
@@ -87,17 +87,17 @@ then `D.f` will call:
 
 ```
 somethingD();
-somethingC();
 somethingB();
+somethingC();
 somethingA();
 ```
 
-When `D` inherits from `C, B`, the linearization results in D→ C→ B→ A.
+When `D` inherits from `C, B`, the linearization results in D→ B→ C→ A.
 
 Notice here that the order in which you declare the parent contracts matters a
 lot. If the inheritance graph is not too complex, it will be easy to see that
 the order of calls will follow the order in which the parents were declared,
-left to right. If your inheritance is more complicated than this and the
+right to left. If your inheritance is more complicated than this and the
 hierarchy is not very clear, you should probably stop using multiple
 inheritance and look for an alternate solution.
 
@@ -134,7 +134,7 @@ Of course, we will use multiple inheritance to form the "deadly diamond of
 death". At this point I start to get nervous because now it sounds veeery risky :)
 
 Let's first try by defining the
-`contract PreSaleWithCapCrowdsale is PreSaleWhitelistedCrowdsale, CappedCrowdsale`,
+`contract PreSaleWithCapCrowdsale is CappedCrowdsale, PreSaleWhitelistedCrowdsale`,
 From what we learned before, this will result in the linearization
 `PreSaleWithCapCrowdsale`→ `PreSaleWhitelistedCrowdsale`→ `CappedCrowdsale`→ `Crowdsale`,
 and thus, the `validate` condition of `PreSaleWithCapCrowdsale` will be:
@@ -148,7 +148,7 @@ whitelisted investor buys tokens before the crowdsale has ended, she will be
 able to bypass the hard cap, and buy as many tokens as she wants.
 
 That's not good. Let's fix it, just by swapping the order on
-`contract PreSaleWithCapCrowdsale is CappedCrowdsale, PreSaleWhitelistedCrowdsale`,
+`contract PreSaleWithCapCrowdsale is PreSaleWhitelistedCrowdsale, CappedCrowdsale`,
 which will give us the linearization
 `PreSaleWithCapCrowdsale`→ `CappedCrowdsale`→ `PreSaleWhitelistedCrowdsale`→ `Crowdsale`,
 and the `validate` condition will be:
