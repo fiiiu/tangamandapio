@@ -116,7 +116,7 @@ particular, I would like to take a look at the case that Philip Daian
 brilliantly explains on his blog post
 [Solidity anti-patterns: Fun with inheritance DAG abuse](https://pdaian.com/blog/solidity-anti-patterns-fun-with-inheritance-dag-abuse/).
 
-In there, he presents a Crowdsale contract that needs "to have a whitelist 
+There he presents a Crowdsale contract that needs "to have a whitelist 
 pool of preferred investors able to buy in the pre-sale [...], along with a 
 hard cap of the number of [...] tokens that can be distributed." You can look
 at the
@@ -248,9 +248,11 @@ attacker to find a specific path that is vulnerable.
 To finish, I wanted to show you my repo where I will be doing
 experiments with crowdsales and their tests:
 [https://github.com/elopio/zeppelin-crowdsales](https://github.com/elopio/zeppelin-crowdsales)
-In there you will see that on my
+
+Take a look at my
 [PreSaleWithCapCrowdsale contract](https://github.com/elopio/zeppelin-crowdsales/blob/master/contracts/PreSaleWithCapCrowdsale.sol)
-I preferred to be explicit about the conditions instead of using `super`:
+You will see that I preferred to be explicit about the conditions instead of
+using `super`:
 
 ```
 function _preValidatePurchase(address _beneficiary, uint256 _weiAmount) internal {
