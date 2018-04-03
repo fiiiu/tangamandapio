@@ -71,9 +71,11 @@ somethingC();
 somethingA();
 ```
 
-When `D` inherits from `B, C`, the linearization results in D→ B→ C→ A, so
-`super` on `D` calls `B`, and you might be surprised by the fact that calling
-`super` on `B` will result on a call to `C` instead of `A`.
+When `D` inherits from `B, C`, the linearization results in D→ B→ C→ A. This
+means that `super` on `D` calls `B`. And you might be a little surprised by the
+fact that calling `super` on `B` will result on a call to `C` instead of `A`,
+even though `B` doesn't inherit from `C`. Finally, `super` on `C` will call
+`A`.
 
 If `D` is defined like:
 
@@ -95,14 +97,16 @@ When `D` inherits from `C, B`, the linearization results in D→ C→ B→ A.
 Notice here that the order in which you declare the parent contracts matters a
 lot. If the inheritance graph is not too complex, it will be easy to see that
 the order of calls will follow the order in which the parents were declared,
-left to right. If your inheritance is more complicated and the hierarchy is not
-very clear, you should probably stop using multiple inheritance and look for an
-alternate solution.
+left to right. If your inheritance is more complicated than this and the
+hierarchy is not very clear, you should probably stop using multiple
+inheritance and look for an alternate solution.
 
 I recommend you to read the wikipedia pages of
-[Multiple inheritance](https://en.wikipedia.org/wiki/Multiple_inheritance] and
+[Multiple inheritance](https://en.wikipedia.org/wiki/Multiple_inheritance) and
 [C3 linearization](https://en.wikipedia.org/wiki/C3_linearization), and the
 [Solidity docs about multiple inheritance](https://solidity.readthedocs.io/en/latest/contracts.html#multiple-inheritance-and-linearization).
+You will find in there a complete explanation of the C3 algorithm, and an
+example with a more complicated inheritance graph.
 
 After some time [auditing smart contracts](https://zeppelin.solutions/security-audits),
 and [supporting the OpenZeppelin framework](https://openzeppelin.org/), the
@@ -131,7 +135,7 @@ death", and we start to get nervous because now it sounds veeery risky :)
 
 Let's define the
 `contract PreSaleWithCapCrowdsale is PreSaleWhitelistedCrowdsale, CappedCrowdsale`,
-3DFrom what we learned before, this will result in the linearization
+From what we learned before, this will result in the linearization
 `PreSaleWithCapCrowdsale`→ `PreSaleWhitelistedCrowdsale`→ `CappedCrowdsale`→ `Crowdsale`,
 and thus, the `validate` condition of `PreSaleWithCapCrowdsale` will be:
 
@@ -160,10 +164,11 @@ reverted even if the sender is whitelisted.
 It's very easy to think that the parent contracts will just be magically merged
 into something that will make sense to our use case, or to make a mistake when
 we linearize them in our mind. Every use case will be different, so our
-framework can't save you the work of how to organize your contracts' hierarchy;
-but, we can make our contracts clearer and to just work for simple cases.
+framework can't save you from the work of organizing your contracts' hierarchy;
+but, we can make our contracts clearer and make sure that they will just work
+for simple cases.
 
-Since zeppelin-solidity 1.7 we have a suite of crowdsale contracts fully
+Since `zeppelin-solidity 1.7` we have a suite of crowdsale contracts fully
 rewritten with all of this in mind.
 
 The base contract
@@ -172,7 +177,7 @@ It explains that some functions should not be overriden, like `buyTokens`. Some
 others like `_preValidatePurchase` can be overriden to implement the
 requirements of your crowdsale, but that extra behavior should be concatenated
 with the one of the parent calling super, to preserve the validations from the
-base contract. And, some functions like `_postValidatePurchase` can be just be
+base contract. And, some functions like `_postValidatePurchase` can be just
 added as hooks in other parts of the crowdsale's lifecycle.
 
 In addition to that, we also provide some contracts for common crowdsale
@@ -257,12 +262,17 @@ function _preValidatePurchase(address _beneficiary, uint256 _weiAmount) internal
 ```
 
 I encourage you to join me on these experiments, to try different combinations
-of crowdsales and to switch the order of the inheritance graph. We will learn
-more about the resulting code that Solidity compiles, we will improve our mental
-picture of the execution stack, and we will practice writing the tests that
-will fully cover all the possible paths. If you have questions, you find
+of crowdsales and to play switching the order of the inheritance graph. We will
+learn more about the resulting code that Solidity compiles, we will improve our
+mental picture of the execution stack, and we will practice writing the tests
+that will fully cover all the possible paths. If you have questions, you find
 errors on the implementations in OpenZeppelin, or you find an alternative
 implementation that will make it easier to develop crowdsales on top of our
 contracts, please
 [let us know by sending a message to the slack channel](https://slack.openzeppelin.org/).
 I am *elopio* in there.
+
+Thanks a lot to [Ale](https://github.com/ajsantander) and
+[Alejo](https://github.com/fiiiu), who worked on these new contracts and helped
+me to understand them. <3
+
