@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tangamandapio (Posts about readings)</title><link>http://elopio.net/</link><description></description><atom:link href="http://elopio.net/categories/readings.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><lastBuildDate>Thu, 05 Apr 2018 01:52:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Incan quipus and cipher with prime number factorization</title><link>http://elopio.net/blog/incan-prime-factorization/</link><dc:creator>Leo Arias</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Quipu#/media/File:Nueva_cor%C3%B3nica_y_buen_gobierno_(1936_facsimile)_p360.png"&gt;&lt;img alt="Drawing of an inca and his quipu" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Nueva_cor%C3%B3nica_y_buen_gobierno_%281936_facsimile%29_p360.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;According to this wise man [Nordenskiöld], the indians placed in their tombs
+only quipus with numbers that for them had a magical value, expressing them
+not in a direct way but through others that included them or their multiples,
+and trying to make them coincide with the resulting numbers of calculations
+from consulting the stars. [...].
+The purpose that lead the indians to such practice was to entertain, with
+this complicated "rebus", the evil spirits, who would struggle to untie the
+knots in the strings and find this magical numbering [...].&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;on Estudio sobre los quipus, from Carlos Radicati di Primeglio.
+(the translation is mine)&lt;/p&gt;
+&lt;p&gt;And that's how the incas invented the cipher with prime number factorization,
+the base of all our secure communications and cryptocurrencies. :D&lt;/p&gt;&lt;/div&gt;</description><category>free software</category><category>readings</category><guid>http://elopio.net/blog/incan-prime-factorization/</guid><pubDate>Tue, 09 Jan 2018 16:08:35 GMT</pubDate></item></channel></rss>

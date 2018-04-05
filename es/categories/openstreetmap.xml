@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tangamandapio (Publicaciones sobre openstreetmap)</title><link>http://elopio.net/</link><description></description><atom:link href="http://elopio.net/es/categories/openstreetmap.xml" rel="self" type="application/rss+xml"></atom:link><language>es</language><lastBuildDate>Thu, 05 Apr 2018 01:52:07 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>San José participará en #CompletetheMap, para mejorar el mapa de la ciudad entre todes</title><link>http://elopio.net/es/blog/completethemap/</link><dc:creator>Leo Arias</dc:creator><description>&lt;div&gt;&lt;p&gt;&lt;a href="https://www.mapillary.com/"&gt;Mapillary&lt;/a&gt; por primera vez ha lanzado un reto
+global de captura de imágenes. Desde el 11 de diciembre hasta el 31 de enero,
+San José estará participando en
+&lt;a href="https://blog.mapillary.com/community/2017/06/29/completethemap-challenges.html"&gt;#CompletetheMap&lt;/a&gt;
+para completar su mapa capturando fotos con las herramientas de Mapillary,
+junto a ciudades, pueblos y lugares remotos de todo el mundo.&lt;/p&gt;
+&lt;p&gt;Mapillary es una plataforma colaborativa que permite visualizar el mundo con
+fotos a nivel de la calle. Las fotos son contribuidas por una amplia gama de
+fuentes, incluyendo personas, gobiernos, agencias humanitarias y empresas de
+mapas. Las fotos luego son procesadas por Mapillary para extraer datos
+geográficos como límites de velocidad, giros prohibidos, ciclovías y la
+cantidad de vegetación en un lugar. Por estas razones, se ha convertido en una
+herramienta popular en la comunidad de OpenStreetMap, un proyecto de código
+abierto que se basa en personas editoras voluntarias para crear el mapa del
+mundo.&lt;/p&gt;
+&lt;iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&amp;amp;filter=%5B%22all%22%5D&amp;amp;map_filter=%5B%22all%22%5D&amp;amp;map_style=mapbox_streets&amp;amp;image_key=mlDTpI2tIa5fP_My7riHcw&amp;amp;x=0.49787228454942833&amp;amp;y=0.4727477024147648&amp;amp;client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&amp;amp;style=photo" frameborder="0"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Algunos usos prácticos de estos datos incluyen el análisis de la infraestructura
+para bicicletas a lo largo de una ciudad, reducción de riesgos antes y después de
+desastres, movilidad urbana, y puntos de reunión. #CompletetheMap viene a impulsar
+este estilo rápido de recolección de datos en un área específica. La idea
+de #CompletetheMap es simple. El área seleccionada se divide en zonas, y personas
+miembros de la comunidad local colaboran para capturar imágenes en cada zona.
+Conforme el porcentaje de fotos de calles y caminos aumenta, la zona cambia de
+color de rojo a naranja, y de naranja a verde.&lt;/p&gt;
+&lt;p&gt;El reto #CompletetheMap empezó en mayo de este año y ya se ha realizado en ciudades
+como
+&lt;a href="https://mapillary.github.io/mapillary_greenhouse/ctm/brasilia/"&gt;Brasilia&lt;/a&gt;,
+&lt;a href="https://mapillary.github.io/mapillary_greenhouse/challenge/moscow/"&gt;Moscú&lt;/a&gt;,
+&lt;a href="https://mapillary.github.io/mapillary_greenhouse/challenge/berlin/"&gt;Berlín&lt;/a&gt; y
+&lt;a href="https://mapillary.github.io/mapillary_greenhouse/challenge/ottawa/"&gt;Ottawa&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cada una de estas ciudades ha respondido en su propia forma, reuniendo a la
+comunidad y mostrando la gran cantidad de datos que incluso un pequeño grupo de
+personas puede recolectar. Brasilia se ha concentrado en características de
+calles y puntos de interés. Moscú se reunió para capturar fotos de algunas de
+las carreteras más nuevas alrededor del centro de la ciudad. Berlín, la primera
+en participar en el reto de #CompletetheMap, ayudó a prepararlo recolectando
+muchas de las calles más pequeñas y rutas peatonales. Luego está Ottawa,
+un #CompletetheMap centrado en infraestructura para bicicletas. En este reto,
+20 personas lograron recolectar medio millón de imágenes y casi 2000 km de
+cobertura nueva.&lt;/p&gt;
+&lt;p&gt;El reto global le permite a cualquier persona seguir su progreso relativo a
+otras alrededor del mundo, recolectando fotos en un área de 50 km2. Las
+participantes pueden ganar aumentando los km de nuevas rutas que capturan, la
+cantidad de imágenes que toman, y el número de participantes que se unen para
+ayudarles.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://ia801202.us.archive.org/4/items/jaquerespeis-mapas/complethemap/complethemap.png"&gt;&lt;img alt="CompletetheMap" src="https://ia801202.us.archive.org/4/items/jaquerespeis-mapas/complethemap/complethemap.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Actualmente, 23 ciudades de 17 países se han registrado para el #CompletetheMap
+global.&lt;/p&gt;
+&lt;p&gt;Todo lo que se necesita para colaborar es un teléfono celular. Participe en el
+reto descargando la aplicación de Mapillary y tomando fotos de las calles por
+las que viaja. Una vez que se conecte a una red wifi, suba las imágenes y
+véalas aparecer en Mapillary.com.&lt;/p&gt;
+&lt;p&gt;Puede unirse a la comunidad de maperos y maperas de Costa Rica en
+&lt;a href="https://www.facebook.com/maperespeis/"&gt;https://www.facebook.com/maperespeis/&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</description><guid>http://elopio.net/es/blog/completethemap/</guid><pubDate>Mon, 11 Dec 2017 02:08:35 GMT</pubDate></item><item><title>Maperespeis #2: Volcán Poás</title><link>http://elopio.net/es/blog/maperespeis-poas/</link><dc:creator>Leo Arias</dc:creator><description>&lt;div&gt;&lt;p&gt;El domingo pasado fuimos a hacer mapas libres al
+&lt;a href="https://es.wikipedia.org/wiki/Volc%C3%A1n_Po%C3%A1s"&gt;Volcán Poás&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe width="640" height="480" src="https://embed-v1.mapillary.com/embed?version=1&amp;amp;filter=%5B%22all%22%5D&amp;amp;map_filter=%5B%22all%22%5D&amp;amp;image_key=BHp7eM8RAbbhkLWc6XyR6g&amp;amp;client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&amp;amp;style=photo" frameborder="0"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Esta es la segunda excursión geek del JaquerEspéis. De la primera aprendimos
+que había que esperar al verano porque
+&lt;a href="https://archive.org/download/jaquerespeis-mapas/photo484953803566260.jpg"&gt;con tormenta no se puede mapear&lt;/a&gt;.
+Y el día fue perfecto. No sólo estuvo soleado, sino que el cráter estaba
+totalmente despejado y así pudimos agregar un nuevo lugar al tour virtual de
+Costa Rica.&lt;/p&gt;
+&lt;p&gt;Además, esta vez llegamos mucho mejor preparados, con varios teléfonos con
+&lt;a href="https://www.mapillary.com/"&gt;mapillary&lt;/a&gt;, &lt;a href="http://osmand.net/"&gt;osmand&lt;/a&gt; y
+&lt;a href="http://wiki.openstreetmap.org/wiki/OSMTracker_(Android)"&gt;OSMTracker&lt;/a&gt;, una
+&lt;a href="https://theta360.com/en/"&gt;cámara 360&lt;/a&gt;, un
+&lt;a href="https://buy.garmin.com/en-US/US/p/140022"&gt;GPS Garmin&lt;/a&gt;, un dron y hasta
+&lt;a href="https://twitter.com/elotrojames"&gt;una libreta&lt;/a&gt; y dos biólogos.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://archive.org/download/maperespeis-poas/image20170226_104505408.jpg"&gt;&lt;img alt="La procesión del MaperEspeis" src="https://archive.org/download/maperespeis-poas/image20170226_104505408.jpg"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Así funciona el asunto. Todos y todas con el GPS del teléfono activado
+esperamos a que el teléfono encuentre la ubicación. Después cada persona usa la
+aplicación que prefiere para recolectar datos: fotos, audios, videos, notas de
+texto, &lt;a href="https://es.wikipedia.org/wiki/GPX"&gt;trazas&lt;/a&gt;, anotaciones en la libreta...&lt;/p&gt;
+&lt;p&gt;Luego, en nuestras respectivas casas, subimos, publicamos y compartimos todos
+los datos recolectados. Estos nos sirven para mejorar los mapas libres de
+&lt;a href="https://es.wikipedia.org/wiki/OpenStreetMap"&gt;OpenStreetMap&lt;/a&gt;. Agregamos desde
+cosas tan sencillas como
+&lt;a href="https://archive.org/download/maperespeis-poas/20170226_105554.jpg"&gt;la ubicación de un basurero&lt;/a&gt;
+hasta cosas tan importantes como qué tan accesible es el lugar para una persona
+en silla de ruedas, junto con la ubicación de todos estos accesos o las partes
+en las que faltan. Cada persona mejora el mapa un poquito, en la zona que
+conoce o por la que pasó. Con más de 3 millones de usuarios, OpenStreetMap es
+el mejor mapa del mundo que existe; y es de particular importancia en zonas
+como la nuestra, que tienen poco potencial económico para las
+&lt;a href="https://en.wikipedia.org/wiki/Don't_be_evil#The_End_of_.22Don.27t_Be_Evil.22"&gt;megacorporaciones que hacen y venden mapas cerrados robando datos privados a sus usuarios&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Como los mapas que hacemos son libres, lo que sigue no tiene límites. Hay
+grupos trabajando en reconstrucción de modelos tridimensionales a partir de las
+fotos, identificación e interpretación de señales y rótulos, aplicaciones que
+calculan la ruta óptima para llegar a cualquier lugar usando cualquier
+combinación de medios de transporte, aplicaciones para asistir en la toma de
+decisiones al diseñar el futuro de una ciudad, y muchas otras cosas más. Todo
+basado en conocimiento compartido y comunidad.&lt;/p&gt;
+&lt;iframe width="800" height="600" src="https://embed-v1.mapillary.com/embed?version=1&amp;amp;filter=%5B%22all%22%5D&amp;amp;map_filter=%5B%22all%22%5D&amp;amp;image_key=dYPJnZINW7nHTEgJ7g9OEA&amp;amp;client_id=WHJxWW40RWhyVGR6ajVEci1saHZNUTozZDQ5NjRmM2I4ZjBiNjc2&amp;amp;style=classic" frameborder="0"&gt;&lt;/iframe&gt;
+
+&lt;p&gt;La imagen de arriba es el tour virtual en Mapillary. Como
+lo grabamos con la cámara 360, pueden hacer clic y arrastrar con el mouse para
+ver todos los ángulos. También pueden hacer clic arriba, en el botón de
+reproducir para seguir el camino que tomamos. O pueden hacer clic en cualquier
+punto verde en el mapa para seguir su propio camino.&lt;/p&gt;
+&lt;p&gt;Muchas gracias a todos y todas por apuntarse a mapear, en especial a Denisse y
+Charles por servirnos de guías y llenar el paseo de datos interesantes sobre la
+flora, fauna, geología e importancia histórica del Poás.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://archive.org/download/maperespeis-poas/20170226_110006.jpg"&gt;&lt;img alt="Miembros del MaperEspeis" src="https://archive.org/download/maperespeis-poas/20170226_110006.jpg"&gt;&lt;/a&gt;
+(&lt;a href="https://archive.org/details/maperespeis-poas"&gt;Aquí más fotos y videos&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;El próximo maperespeis será el 12 de marzo.&lt;/p&gt;&lt;/div&gt;</description><category>free software</category><category>openstreetmap</category><guid>http://elopio.net/es/blog/maperespeis-poas/</guid><pubDate>Wed, 01 Mar 2017 03:23:35 GMT</pubDate></item></channel></rss>

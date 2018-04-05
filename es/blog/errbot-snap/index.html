@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>An errbot snap for simplified chatops | Tangamandapio</title>
+<link href="../../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../../../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (eo)" href="../../../eo/rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../../rss.xml">
+<link rel="canonical" href="http://elopio.net/es/blog/errbot-snap/">
+<!--[if lt IE 9]><script src="../../../assets/js/html5.js"></script><![endif]--><meta name="author" content="Leo Arias">
+<link rel="prev" href="../gobot-snaps/" title="Deploy to all SBCs with Gobot and a single snap package" type="text/html">
+<link rel="next" href="../the-dream-ship/" title="The dream ship" type="text/html">
+<meta property="og:site_name" content="Tangamandapio">
+<meta property="og:title" content="An errbot snap for simplified chatops">
+<meta property="og:url" content="http://elopio.net/es/blog/errbot-snap/">
+<meta property="og:description" content="I'm a Quality Assurance Engineer. A big part of my job is to find problems,
+then make sure that they are fixed and automated so they don't regress. If I
+do my job well, then our process will identify ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-07-11T22:31:00-06:00">
+<meta property="article:tag" content="deployment">
+<meta property="article:tag" content="errbot">
+<meta property="article:tag" content="free software">
+<meta property="article:tag" content="snaps">
+<meta property="article:tag" content="ubuntu">
+<link rel="alternate" hreflang="en" href="../../../blog/errbot-snap/">
+<link rel="alternate" hreflang="eo" href="../../../eo/blog/errbot-snap/">
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Mostrar navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://elopio.net/es/">
+
+                <span id="blog-title">Tangamandapio</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="../../archive.html">Archivo</a>
+                </li>
+<li>
+<a href="../../categories/">Etiquetas</a>
+                </li>
+<li>
+<a href="../../rss.xml">Canal RSS</a>
+                </li>
+<li>
+<a href="../../../notebook">Notas</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="http://elopio.net/" rel="alternate" hreflang="en">English</a></li>
+            <li><a href="http://elopio.net/eo/" rel="alternate" hreflang="eo">Esperante</a></li>
+
+                
+                    
+    <li>
+    <a href="index.md" id="sourcelink">Código fuente</a>
+    </li>
+
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">An errbot snap for simplified chatops</a></h1>
+
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                    Leo Arias
+            </span></p>
+            <p class="dateline"><a href="." rel="bookmark"><time class="published dt-published" datetime="2017-07-11T22:31:00-06:00" itemprop="datePublished" title="2017-07-11 22:31">2017-07-11 22:31</time></a></p>
+            
+        <p class="sourceline"><a href="index.md" class="sourcelink">Código fuente</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<p>I'm a Quality Assurance Engineer. A big part of my job is to find problems,
+then make sure that they are fixed and <em>automated</em> so they don't regress. If I
+do my job well, then our process will identify new and potential problems early
+<em>without manual intervention</em> from anybody in the team. It's like trying to
+automate myself, everyday, until I'm no longer needed and have to jump to
+another project.</p>
+<p>However, as we work in the project, it's unavoidable that many small manual
+tasks accumulate on my hands. This happens because I set up the continuous
+integration infrastructure, so I'm the one who knows more about it and have
+easier access, or because I'm the one who requested access to the build farm
+so I'm the one with the password, or because I configured the staging
+environment and I'm the only one who knows the details. This is a great way
+to achieve job security, but it doesn't lead us to higher quality. It's a job
+half done, and it's terribly boring to be a bottleneck and a silo of
+information about testing and the release process. All of these tasks should be
+shared by the whole team, as with all the other tasks in the project.</p>
+<p>There are two problems. First, most of these tasks involve delicate credentials
+that shouldn't be freely shared with everybody. Second, even if the task itself
+is simple and quick to execute, it's not very simple to document how to set up
+the environment to be able to execute them, nor how to make sure that the right
+task is executed in the right moment.</p>
+<p>Chatops is how I like to solve all of this. The idea is that every task that
+requires manual intervention is implemented in a script that can be executed by
+a bot. This bot joins the communication channel where the entire team is
+present, and it will execute the tasks and report about their results as a
+response to external events that happen somewhere in the project
+infrastructure, or as a response to the direct request of a team member in the
+channel. The credentials are kept safe, they only have to be shared with the
+bot and the permissions can be handled with access control lists or membership
+to the channel. And the operative knowledge is shared with all the team,
+because they are all listening in the same channel with the bot. This means
+that anybody can execute the tasks, and the bot assists them to make it simple.</p>
+<p>In snapcraft we started writing our bot not so long ago. It's called snappy-m-o
+(<a href="http://pixar.wikia.com/wiki/M-O">Microbe Obliterator</a>), and it's written
+in python with <a href="http://errbot.io/">errbot</a>. We, of course, packaged it as a
+snap so we have automated delivery every time we change it's source code, and
+the bot is also autoupdated in the server, so in the chat we are always
+interacting with the latest and greatest.</p>
+<p>Let me show you how we started it, in case you want to get your own. But let's
+call this one Baymax, and let's make a virtual environment with errbot, to
+experiment.</p>
+<p><a href="https://upload.wikimedia.org/wikipedia/en/2/2c/Baymax_from_Disney%27s_Big_Hero_6.png"><img alt="drawing of the Baymax bot" src="https://upload.wikimedia.org/wikipedia/en/2/2c/Baymax_from_Disney%27s_Big_Hero_6.png"></a></p>
+<pre class="code literal-block"><span></span>$ mkdir -p ~/workspace/baymax
+$ <span class="nb">cd</span> ~/workspace/baymax
+$ sudo apt install python3-venv
+$ python3 -m venv .venv
+$ <span class="nb">source</span> .venv/bin/activate
+$ pip install errbot
+$ errbot --init
+</pre>
+
+
+<p>The last command will initialize this bot with a super simple plugin, and
+will configure it to work in text mode. This means that the bot won't be
+listening on any channel, you can just interact with it through the command
+line (the ops, without the chat). Let's try it:</p>
+<pre class="code literal-block"><span></span>$ errbot
+<span class="o">[</span>...<span class="o">]</span>
+&gt;&gt;&gt; !help
+All commands
+<span class="o">[</span>...<span class="o">]</span>
+!tryme - Execute to check <span class="k">if</span> Errbot responds to command.
+<span class="o">[</span>...<span class="o">]</span>
+&gt;&gt;&gt; !tryme
+It works !
+&gt;&gt;&gt; !shutdown --confirm
+</pre>
+
+
+<p><code>tryme</code> is the command provided by the example plugin that <code>errbot --init</code>
+created. Take a look at the file <code>plugins/err-example/example.py</code>, errbot is
+just lovely. In order to define your own plugin you will just need a class that
+inherits from <code>errbot.BotPlugin</code>, and the commands are methods decorated with
+<code>@errbot.botcmd</code>. I won't dig into how to write plugins, because they have an
+amazing
+<a href="http://errbot.io/en/latest/user_guide/plugin_development/index.html">documentation about Plugin development</a>.
+You can also read the plugins we have in our snappy-m-o, one for
+<a href="https://github.com/elopio/snappy-m-o/blob/master/plugins/autopkgtest_github/autopkgtest_github.py">triggering autopkgtests on GitHub pull requests</a>,
+and the other for
+<a href="https://github.com/elopio/snappy-m-o/blob/master/plugins/snapcraft_github/snapcraft_github.py">subscribing to the results of the pull requests tests</a>.</p>
+<p>Let's change the config of Baymax to put it in an IRC chat:</p>
+<pre class="code literal-block"><span></span>$ pip install irc
+</pre>
+
+
+<p>And in the <code>config.py</code> file, set the following values:</p>
+<pre class="code literal-block"><span></span>BACKEND = 'IRC'
+BOT_IDENTITY = {
+    'nickname' : 'baymax-elopio',  # Nicknames need to be unique, so append your own.
+                                   # Remember to replace 'elopio' with your nick everywhere
+                                   # from now on.
+    'server' : 'irc.freenode.net',
+}
+CHATROOM_PRESENCE = ('#snappy',)
+</pre>
+
+
+<p>Run it again with the errbot command, but this time join the #snappy channel
+in irc.freenode.net, and write in there <code>!tryme</code>. It works ! :)</p>
+<p><a href="https://archive.org/download/elopio-screenshots2/errbot/errbot-snap.png"><img alt="screenshot of errbot on IRC" src="https://archive.org/download/elopio-screenshots2/errbot/errbot-snap.png"></a></p>
+<p>So, this is very simple, but let's package it now to start with the good
+practice of continuous delivery before it gets more complicated. As usual, it
+just requires a <code>snapcraft.yaml</code> file with all the packaging info and metadata:</p>
+<pre class="code literal-block"><span></span><span class="n">name</span><span class="o">:</span> <span class="n">baymax</span><span class="o">-</span><span class="n">elopio</span>
+<span class="n">version</span><span class="o">:</span> <span class="s1">'0.1-dev'</span>
+<span class="n">summary</span><span class="o">:</span> <span class="n">A</span> <span class="n">test</span> <span class="n">bot</span> <span class="k">with</span> <span class="n">errbot</span><span class="o">.</span>
+<span class="n">description</span><span class="o">:</span> <span class="n">Chat</span> <span class="n">ops</span> <span class="n">bot</span> <span class="k">for</span> <span class="n">my</span> <span class="n">team</span><span class="o">.</span>
+<span class="n">grade</span><span class="o">:</span> <span class="n">stable</span>
+<span class="n">confinement</span><span class="o">:</span> <span class="n">strict</span>
+
+<span class="n">apps</span><span class="o">:</span>
+  <span class="n">baymax</span><span class="o">-</span><span class="n">elopio</span><span class="o">:</span>
+    <span class="n">command</span><span class="o">:</span> <span class="n">env</span> <span class="n">LC_ALL</span><span class="o">=</span><span class="n">C</span><span class="o">.</span><span class="na">UTF</span><span class="o">-</span><span class="mi">8</span> <span class="n">errbot</span> <span class="o">-</span><span class="n">c</span> <span class="n">$SNAP</span><span class="o">/</span><span class="n">config</span><span class="o">.</span><span class="na">py</span>
+    <span class="n">plugs</span><span class="o">:</span> <span class="o">[</span><span class="n">home</span><span class="o">,</span> <span class="n">network</span><span class="o">,</span> <span class="n">network</span><span class="o">-</span><span class="n">bind</span><span class="o">]</span>
+
+<span class="n">parts</span><span class="o">:</span>
+  <span class="n">errbot</span><span class="o">:</span>
+    <span class="n">plugin</span><span class="o">:</span> <span class="n">python</span>
+    <span class="n">python</span><span class="o">-</span><span class="n">packages</span><span class="o">:</span> <span class="o">[</span><span class="n">errbot</span><span class="o">,</span> <span class="n">irc</span><span class="o">]</span>
+  <span class="n">baymax</span><span class="o">:</span>
+    <span class="n">source</span><span class="o">:</span> <span class="o">.</span>
+    <span class="n">plugin</span><span class="o">:</span> <span class="n">dump</span>
+    <span class="n">stage</span><span class="o">:</span>
+      <span class="o">-</span> <span class="n">config</span><span class="o">.</span><span class="na">py</span>
+      <span class="o">-</span> <span class="n">plugins</span>
+    <span class="n">after</span><span class="o">:</span> <span class="o">[</span><span class="n">errbot</span><span class="o">]</span>
+</pre>
+
+
+<p>And we need to change a few more values in <code>config.py</code> to make sure that the
+bot is relocatable, that we can run it in the isolated snap environment, and
+that we can add plugins after it has been installed:</p>
+<pre class="code literal-block"><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">BOT_DATA_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'SNAP_USER_DATA'</span><span class="p">)</span>
+<span class="n">BOT_EXTRA_PLUGIN_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'SNAP'</span><span class="p">),</span> <span class="s1">'plugins'</span><span class="p">)</span>
+<span class="n">BOT_LOG_FILE</span> <span class="o">=</span> <span class="n">BOT_DATA_DIR</span> <span class="o">+</span> <span class="s1">'/err.log'</span>
+</pre>
+
+
+<p>One final try, this time from the snap:</p>
+<pre class="code literal-block"><span></span>$ sudo apt install snapcraft
+$ snapcraft
+$ sudo snap install baymax*.snap --dangerous
+$ baymax-elopio
+</pre>
+
+
+<p>And go back to IRC to check.</p>
+<p>Last thing would be to push the source code we have just written to a GitHub
+repo, and enable the continuous delivery in build.snapcraft.io. Go to your
+server and install the bot with <code>sudo snap install baymax-elopio --edge</code>.
+Now everytime somebody from your team makes a change in the master repo in
+GitHub, the bot in your server will be automatically updated to get those
+changes within a few hours without any work from your side.</p>
+<p>If you are into chatops, make sure that every time you do a manual task, you
+also plan for some time to turn that task into a script that can be executed
+by your bot. And get ready to enjoy tons and tons of free time, or just keep
+going through those <a href="https://bugs.launchpad.net/snapcraft">400 open bugs</a>,
+whichever you prefer :)</p>
+</div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="../../categories/deployment/" rel="tag">deployment</a></li>
+            <li><a class="tag p-category" href="../../categories/errbot/" rel="tag">errbot</a></li>
+            <li><a class="tag p-category" href="../../categories/free-software/" rel="tag">free software</a></li>
+            <li><a class="tag p-category" href="../../categories/snaps/" rel="tag">snaps</a></li>
+            <li><a class="tag p-category" href="../../categories/ubuntu/" rel="tag">ubuntu</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="../gobot-snaps/" rel="prev" title="Deploy to all SBCs with Gobot and a single snap package">Publicación anterior</a>
+            </li>
+            <li class="next">
+                <a href="../the-dream-ship/" rel="next" title="The dream ship">Siguiente publicación</a>
+            </li>
+        </ul></nav></aside></article>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../../../assets/js/all-nocdn.js"></script><script src="../../../assets/js/colorbox-i18n/jquery.colorbox-es.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("es");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>

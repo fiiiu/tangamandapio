@@ -1,0 +1,23 @@
+* Movement
+
+  * Esc >: go to the end of the buffer.
+
+  * C-f: move forward one character.
+
+  * M-f: move forward one word.
+
+  * C-b: move backwards one character.
+
+  * M-b: move backwards one word.
+
+  * C-e: move to the end of the line.
+
+* Delete
+
+  * C-d: delete forward one character.
+
+  * M-d: delete forward one word.
+
+* Buffers
+
+  * C-x k: kill buffer

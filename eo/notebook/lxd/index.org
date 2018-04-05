@@ -1,0 +1,15 @@
+* Make an ephemeral container
+
+    lxc launch --ephemeral $image $container_name
+
+* Make a privileged container
+
+    lxc launch --config security.privileged=true $image $container_name
+
+* Make a container with nested virtualization
+
+        lxc launch --config security.nesting=true $image $container_name
+
+* Mount a directory
+
+    lxc config device add $container_name $device_name disk source=$source_dir path=$dest_dir

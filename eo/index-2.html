@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="eo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tangamandapio (2a paĝo de malnovaj artikoloj) | Tangamandapio</title>
+<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS (en)" href="../rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (eo)" href="rss.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS (es)" href="../es/rss.xml">
+<link rel="canonical" href="http://elopio.net/eo/index-2.html">
+<link rel="prev" href="." type="text/html">
+<link rel="next" href="index-1.html" type="text/html">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]-->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Salti al ĉefenhavo</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-inverse navbar-static-top"><div class="container">
+<!-- This keeps the margins nice -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Ŝalti menuon</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://elopio.net/eo/">
+
+                <span id="blog-title">Tangamandapio</span>
+            </a>
+        </div>
+<!-- /.navbar-header -->
+        <div class="collapse navbar-collapse" id="bs-navbar" aria-expanded="false">
+            <ul class="nav navbar-nav">
+<li>
+<a href="archive.html">Arĥivo</a>
+                </li>
+<li>
+<a href="categories/">Etikedoj</a>
+                </li>
+<li>
+<a href="rss.xml">RSS feed</a>
+                </li>
+<li>
+<a href="../notebook">Notlibro</a>
+
+                
+            </li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+            </li>
+<li><a href="http://elopio.net/" rel="alternate" hreflang="en">English</a></li>
+            <li><a href="http://elopio.net/es/" rel="alternate" hreflang="es">Español</a></li>
+
+                
+                    
+                
+            </ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        <div class="row">
+            
+            
+
+    
+
+
+    
+<div class="postindex">
+    <article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/call-for-testing-trusty-snaps/" class="u-url">Call for testing: snaps in Trusty</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/call-for-testing-trusty-snaps/" rel="bookmark"><time class="published dt-published" datetime="2017-02-10T08:00:00-06:00" title="2017-02-10 08:00">2017-02-10 08:00</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>There is a huge announcement coming: snaps now run in Ubuntu 14.04 Trusty Tahr.</p>
+<p>Take a moment to note how big this is. Ubuntu 14.04 is a long-term release that
+will be supported until 2019. Ubuntu 16.04 is also a long-term release that
+will be supported until 2021. We have many many many users in both releases,
+some of which will stay there until we drop the support. Before this snappy new
+world, all those users were stuck with the versions of all their programs
+released in 2014 or 2016, getting only updates for security and critical
+issues. Just try to remember how your favorite program looked 5 years ago;
+maybe it didn't even exist. We were used to choose between stability and cool
+new features.</p>
+<p>Well, a new world is possible. With snaps you can have a stable base system
+with frequent updates for every program, without the risk of breaking your
+machine. And now if you are a Trusty user, you can just start taking advantage
+of all this. If you are a developer, you have to prepare only one release and
+it will just work in all the supported Ubuntu releases.</p>
+<p>Awesome, right? The Ubuntu devs have been doing a great job. snapd has already
+landed in the Trusty archive, and we have been running many manual and
+automated tests on it. So we would like now to invite the community to test it,
+explore weird paths, try to break it. We will appreciate it very much, but all
+of those Trusty users out there will love it, when they receive loads of new
+high quality free software on their oldie machines.</p>
+<p>So, how to get started?</p>
+<p>If you are already running Trusty, you will just have to install snapd:</p>
+<pre class="code literal-block"><span></span>$ sudo apt update <span class="o">&amp;&amp;</span> sudo apt install snapd
+</pre>
+
+
+<p>Reboot your system after that in case you had a kernel update pending, and to
+get the paths for the new snap binaries set up.</p>
+<p>If you are running a different Ubuntu release, you can
+<a href="http://elopio.net/blog/install-ubuntu-in-vm/">Install Ubuntu in a virtual machine</a>.
+Just make sure that you install the
+<a href="blog/call-for-testing-trusty-snaps/14.04%20iso">http://releases.ubuntu.com/14.04/ubuntu-14.04.5-desktop-amd64.iso</a>.</p>
+<p>Once you have Trusty with snapd ready, try a few commands:</p>
+<pre class="code literal-block"><span></span>$ snap list
+$ sudo snap install hello-world
+$ hello-world
+$ snap find something
+</pre>
+
+
+<p><a href="https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps-bigger.png"><img alt="screenshot of snaps running in Trusty" src="https://archive.org/download/elopio-screenshots2/trusty/trusty-snaps-bigger.png"></a></p>
+<p>Keep searching for snaps until you find one that's interesting. Install it,
+try it, and let us know how it goes.</p>
+<p>If you find something wrong, please
+<a href="https://bugs.launchpad.net/snapd/+filebug">report a bug</a> with the <code>trusty</code>
+tag. If you are new to the Ubuntu community or get lost on the way, come and
+join us in <a href="https://rocket.ubuntu.com/channel/community">Rocket Chat</a>.</p>
+<p>And after a good session of testing, sit down, relax, and get ohmygiraffe. With
+love from <a href="https://twitter.com/popey">popey</a>:</p>
+<pre class="code literal-block"><span></span>$ sudo snap install ohmygiraffe
+$ ohmygiraffe
+</pre>
+
+
+<p><a href="https://archive.org/download/elopio-screenshots2/trusty/ohmygiraffe.png"><img alt="screenshot of ohmygiraffe" src="https://archive.org/download/elopio-screenshots2/trusty/ohmygiraffe.png"></a></p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/ubuntu-testing-day-wrap-up-20170203/" class="u-url">Ubuntu Testing Day wrap up - Ubuntu Core and QEMU (20170203)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/ubuntu-testing-day-wrap-up-20170203/" rel="bookmark"><time class="published dt-published" datetime="2017-02-08T23:38:13-06:00" title="2017-02-08 23:38">2017-02-08 23:38</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>After a little break, on the first Friday of February we resumed the Ubuntu
+Testing Days.</p>
+<p>This session was pretty interesting, because after setting some of the bases
+last year we are now ready to dig deep into the most important projects that
+will define the future of Ubuntu.</p>
+<p>We talked about Ubuntu Core, a snap package that is the base of the operating
+system. Because it is a snap, it gets the same benefits as all the other snaps:
+automatic updates, rollbacks in case of error during installation, read-only
+mount of the code, isolation from other snaps, multiple channels on the store
+for different levels of stability, etc.</p>
+<p>The features, philosophy and future of Core were presented by
+<a href="https://mvogt.wordpress.com/">Michael Vogt</a> and
+<a href="https://twitter.com/zygoon">Zygmunt Krynicki</a>, and then
+<a href="https://twitter.com/frgnieto">Federico Giménez</a> did a great demo of how to
+create an image and test it in QEMU.</p>
+<p>Click the image below to watch the full session.</p>
+<p><a href="https://www.youtube.com/watch?v=nBfAmCZMXQ8"><img alt="Alt text" src="https://img.youtube.com/vi/nBfAmCZMXQ8/0.jpg"></a></p>
+<p>There are plenty of resources in the Ubuntu websites related to Ubuntu Core.</p>
+<p>To get started, we recommend to follow this guide to
+<a href="https://developer.ubuntu.com/core/get-started/kvm">run the operating system in a virtual machine</a>.</p>
+<p>After that, and if you are feeling brave and want to help Michael, Zygmund and
+Federico, you can download the candidate image instead, from
+<a href="http://cdimage.ubuntu.com/ubuntu-core/16/candidate/pending/ubuntu-core-16-amd64.img.xz">http://cdimage.ubuntu.com/ubuntu-core/16/candidate/pending/ubuntu-core-16-amd64.img.xz</a>
+This is the image that's being currently tested, so if you find something wrong
+or weird, please
+<a href="https://bugs.launchpad.net/snapd/+filebug">report a bug in Launchpad</a>.</p>
+<p>Finally, if you want to learn more about the snaps that compose the image and
+take a peek at the things that we'll cover in the following testing days, you
+can follow the
+<a href="https://tutorials.ubuntu.com/tutorial/create-your-own-core-image#0">tutorial to create your own Core image</a>.</p>
+<p>On this session we were also accompanied by
+<a href="https://twitter.com/sdrobertw">Robert Wolff</a> who works on 96boards at Linaro.
+He has an awesome show every Thursday called
+<a href="https://www.96boards.org/openhours/">Open Hours</a>. At 96boards they are
+building open Linux boards for prototyping and embedded computing. Anybody can
+jump into the Open Hours to learn more about this cool work.</p>
+<p>The great news that Robert brought is that both Open Hours and Ubuntu Testing
+Days will be focused on Ubuntu Core this month. He will be our guest again next
+Friday, February 10th, where he will be talking about the
+<a href="http://www.96boards.org/product/dragonboard410c/">DragonBoard 410c</a>. Also my
+good friend <a href="https://plus.google.com/+OliverGrawert">Oliver Grawert</a> will be
+with us, and he will talk about the work he has been doing to enable Ubuntu in
+this board.</p>
+<p>Great topics ahead, and a full new world of possiblities now that we are
+mixing free software with open hardware and affordable prototyping tools.
+Remember, every Friday in <a href="http://ubuntuonair.com/">http://ubuntuonair.com/</a>,
+no se lo pierda.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/call-for-testing-ipfs/" class="u-url">Call for testing: IPFS</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/call-for-testing-ipfs/" rel="bookmark"><time class="published dt-published" datetime="2017-01-06T09:58:13-06:00" title="2017-01-06 09:58">2017-01-06 09:58</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Happy new year Ubunteros and Ubunteras!</p>
+<p>If you have been following our testing days, you will know by now that
+our intention is to get more people contributing to Ubuntu and free
+software projects, and to help them getting started through testing
+and related tasks. So, we will be making frequent calls for testing
+where you can contribute and learn. Educational AND fun ^_^</p>
+<p>To start the year, I would like to invite you to test the IPFS
+candidate snap. IPFS is a really interesting free project for
+distributed storage. You can read more about it and watch a demo in
+the <a href="https://ipfs.io/%5D">IPFS website</a>.</p>
+<p>We have pushed a nice snap with their latest stable version to the
+candidate channel in the store. But before we publish it to the stable
+channel we would like to get more people testing it.</p>
+<p>You can get a clean and safe environment to test following some of the
+guides you'll find on the
+<a href="https://wiki.ubuntu.com/Testing/UbuntuTestingDay">summaries of the past testing days</a>.</p>
+<p>Or, if you want to use your current system, you can just do:</p>
+<pre class="code literal-block"><span></span>$ sudo snap install ipfs --candidate
+</pre>
+
+
+<p>I have written a
+<a href="https://gist.github.com/elopio/7492a28bd1aef6c4a86b5dcf5d5cb65b#smoke-tests-for-the-ipfs-snap">gist with a simple guide to get started testing it</a></p>
+<p>If you finish that successfully and still have more time, or are
+curious about ipfs, please continue with an exploratory testing
+session. The idea here is just to execute random commands, try unusual
+inputs and just play around.</p>
+<p>You can get ideas from the <a href="https://ipfs.io/docs/examples/">IPFS docs</a>.</p>
+<p>When you are done, please send me an email with your results and any
+comments. And if you get stuck or have any kind of question, please
+don't hesitate to ask. Remember that we welcome everybody.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/ubuntu-testing-day-wrap-up-20161216/" class="u-url">Ubuntu Testing Day wrap up - snapcraft and beers (20161216)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/ubuntu-testing-day-wrap-up-20161216/" rel="bookmark"><time class="published dt-published" datetime="2016-12-16T20:34:13-06:00" title="2016-12-16 20:34">2016-12-16 20:34</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>Today we had the last Ubuntu Testing Day of the year.</p>
+<p>We invited <a href="http://blog.sergiusens.org/">Sergio Schvezov</a> and
+<a href="https://twitter.com/JoeTalbott">Joe Talbott</a>, to join
+<a href="https://twitter.com/rainveil">Kyle</a> and myself. Together we have been working
+on <a href="http://snapcraft.io">Snapcraft</a> the whole year.</p>
+<p>Sergio did a great introduction of snapcraft, and showed some of the new
+features that will land next week in Ubuntu. And because it was the last day of
+work for everybody (except Kyle), we threw some beers into the hang out and
+made it our team end of year party.</p>
+<p>You can watch the full recording by clicking the image below.</p>
+<p><a href="https://www.youtube.com/watch?v=S30MI-suotQ"><img alt="Alt text" src="https://img.youtube.com/vi/S30MI-suotQ/0.jpg"></a></p>
+<p>Snapcraft is one of the few projects that have an exception to land new features
+into released versions of Ubuntu. So every week we are landing new things in
+Xenial and Yakkety. This means that we need to constantly test that we are not
+breaking anything for all the people using stable Ubuntu releases; and it means
+that we would love to have many more hands helping us with those tests.</p>
+<p>If you would like to help, all you have to do is
+<a href="http://elopio.net/blog/install-ubuntu-in-vm/">set up a virtual machine</a> and
+<a href="http://elopio.net/blog/test-sru/">enable the proposed pocket</a> in there.</p>
+<p>This is the active bug for the Stable Release Update of snapcraft 2.24:
+<a href="https://bugs.launchpad.net/ubuntu/+source/snapcraft/+bug/1650632">bug #1650632</a></p>
+<p>Before I shut down my computer and start my holidays, I would like to thank all
+the Ubuntu community for one more year, it has been quite a ride. And I would
+like to thank Sergio, Kyle and Joe in particular. They are the best team a QA
+Engineer could ask for &lt;3.</p>
+<p>See you next year for more testing days.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/test-sru/" class="u-url">Test a stable release update</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/test-sru/" rel="bookmark"><time class="published dt-published" datetime="2016-12-16T13:01:35-06:00" title="2016-12-16 13:01">2016-12-16 13:01</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>Ubuntu has a six month cycle for releases. This means that we work for six months updating software, adding new features and making sure that it all works consistently together when it’s integrated into the operating system, and then we release it. Once we make a release, it is considered stable and then we almost exclusively add to that release critical bug fixes and patches for security vulnerabilities. The exceptions are just a few, and are for software that’s important for Ubuntu and that we want to keep up-to-date with the latest features even in stable releases.</p>
+<p>These bug fixes, security patches and exceptional new features require a lot of testing, because right after they are published they will reach all the Ubuntu users that are in the stable release. And we want the release to remain stable, never ever introduce a regression that will make those users unhappy.</p>
+<p>We call all of them <a href="https://wiki.ubuntu.com/StableReleaseUpdates">Stable Release Updates</a>, and we test them in the <em>proposed</em> pocket of the Ubuntu archive. This is obviously not enabled by default, so the brave souls that want to help us testing the changes in proposed need to enable it.</p>
+<p>Before we go on, I would recommend to test SRUs <a href="http://elopio.net/blog/install-ubuntu-in-vm/">in a virtual machine</a>. Once you enable proposed following this guide you will get constant and untested updates from many packages, and these updates will break parts of your system every now and then. It’s not likely to be critical, but it can bother you if it happens on the machine you need to do your work, or other stuff. And if somebody makes a mistake, you might need to reinstall the system.</p>
+<p>You will also have to find a package that needs testing. <a href="http://snapcraft.io">Snapcraft</a> is one of the few exceptions allowed to land in a stable release every week. So lets use it as an example. Lets say you want to help us testing the upcoming release of snapcraft in Ubuntu 16.04.</p>
+<p>With your machine ready and before enabling proposed, install the version already released of the package you want to test. This way you’ll test later an update to the newer version, just what a normal user would get once the update is approved and lands in the archive. So in a terminal, write:</p>
+<pre><code>  $ sudo apt update
+  $ sudo apt install snapcraft</code></pre>
+<p>Or replace <em>snapcraft</em> with whatever package you are testing. If you are doing it just during the weekend after I am writing this, the released version of snapcraft will be 2.23. You can check it with:</p>
+<pre><code>  $ dpkg -s snapcraft | grep Version
+  Version: 2.23</code></pre>
+<p>Now, to enable proposed, open the <em>Ubuntu Software</em> application, and select <em>Software &amp; Updates</em> from the menu in the top of the window.</p>
+<p><a href="https://archive.org/download/elopio-screenshots2/sru/1-open_sources.png"> <img src="https://archive.org/download/elopio-screenshots2/sru/1-open_sources.png" alt="image"></a></p>
+<p>From the <em>Software &amp; Updates</em> window, select the <em>Developer Options</em> tab. And check the item that says <em>Pre-released updates</em>.</p>
+<p><a href="https://archive.org/download/elopio-screenshots2/sru/2-enable_proposed.png"> <img src="https://archive.org/download/elopio-screenshots2/sru/2-enable_proposed.png" alt="image"></a></p>
+<p>This will prompt for your password. Enter it, and then click the <em>Close</em> button. You will be asked if you want to reload your sources, so yes, click the <em>Reload</em> button.</p>
+<p><a href="https://archive.org/download/elopio-screenshots2/sru/3-reload.png"> <img src="https://archive.org/download/elopio-screenshots2/sru/3-reload.png" alt="image"></a></p>
+<p>Finally try to upgrade. If there is a newer version available in the proposed pocket for the packet you are testing, now you will get it.</p>
+<pre><code>  $ sudo apt install snapcraft
+  $ dpkg -s snapcraft | grep Version
+  Version: 2.24</code></pre>
+<p>Every time there is a proposed update, the package will have corresponding SRU bugs with the tag “verification-needed”. In the case of snapcraft this weekend, this is the bug for the 2.24 proposed update: <a href="https://bugs.launchpad.net/ubuntu/+source/snapcraft/+bug/1650632">https://bugs.launchpad.net/ubuntu/+source/snapcraft/+bug/1650632</a></p>
+<p>The SRU bugs will have instructions about how to test that the fix or the new features released are correct. Follow those steps, and if you are confident that they work as expected, change the tag to “verification-done”. If you find that the fix is not correct, change the tag to “verification-failed”. In case of doubt, you can leave a comment in the bug explaining what you tried and what you found.</p>
+<p>You can read more about SRUs in the <a href="https://wiki.ubuntu.com/StableReleaseUpdates">Stable Release Updates wiki page</a>, and also in the <a href="https://wiki.ubuntu.com/QATeam/PerformingSRUVerification">wiki page explaining how to perform verifications</a>. This last page includes a section to find packages and bugs that need verification. If you want to help the Ubuntu community, you can just jump in and start verifying some of the pending bugs. It will be highly appreciated.</p>
+<p>If you have questions or find a problem, join us in the <a href="https://rocket.ubuntu.com/channel/community">Ubuntu Rocket Chat</a>.</p>
+<div class="references">
+
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/ubuntu-testing-day-wrap-up-20161209/" class="u-url">Ubuntu Testing Day wrap up - Unity8 (20161209)</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/ubuntu-testing-day-wrap-up-20161209/" rel="bookmark"><time class="published dt-published" datetime="2016-12-13T09:41:13-06:00" title="2016-12-13 09:41">2016-12-13 09:41</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>For the third session of the Ubuntu Testing Days,
+<a href="https://plus.google.com/+KevinGunnCanonical">Kevin Gunn</a> joined us to talk
+about the Unity8 snap.</p>
+<p>This is a thriving project with lots of things to do and bugs to uncover, so
+it's the perfect candidate for newcomers eager to help Ubuntu.</p>
+<p>If you are interested and didn't attend our meeting on Friday, click the image
+below to watch the recording.</p>
+<p><a href="https://www.youtube.com/watch?v=oGsA55RvqLI"><img alt="Alt text" src="https://img.youtube.com/vi/oGsA55RvqLI/0.jpg"></a></p>
+<p>To install Unity 8 in the Ubuntu 16.04
+<a href="http://elopio.net/blog/pristine-vm/">cloned virtual machine</a>
+that we prepared on the past session, enter the following commands in the terminal:</p>
+<pre class="code literal-block"><span></span>$ sudo add-apt-repository -u ppa:ci-train-ppa-service/stable-phone-overlay
+$ sudo apt install unity8-session-snap
+$ unity8-snap-install
+$ sudo reboot
+</pre>
+
+
+<p>After reboot, on the login screen click the Ubuntu icon next to your user name
+and change the selection to Unity 8.</p>
+<p>Kevin and his team have a
+<a href="https://docs.google.com/document/d/1o-jKITqUxRsujmN3OwRj3wRnn6dgblKuvrhKjeN8-Wc/edit#heading=h.q06bivmaid8f">google doc with the instructions to build and install the snap, and the
+current status</a>.
+If you find a bug, you can talk to the developers joining the
+<a href="http://webchat.freenode.net/?channels=#ubuntu-touch">#ubuntu-touch IRC channel on freenode</a></p>
+<p>While preparing the testing environment on this session we had a crash, and
+explained how easy it is to send the report to the Ubuntu developers by just
+clicking the <em>Report problem...</em> button. The reports from all our users
+are in the <a href="https://errors.ubuntu.com/">error tracker</a>, along with a frequency
+graph and the links to bug reports where those crashes are being fixed.</p>
+<p>We also showed two tricks to make faster and more pleasant the testing session
+in a virtual machine:</p>
+<ul>
+<li><a href="http://elopio.net/blog/setup-apt-cache/">Set up a cache for deb packages</a></li>
+<li><a href="http://askubuntu.com/questions/858649/how-can-i-copypaste-from-the-host-to-a-kvm-guest">Share the clipboard between the host and the guest</a></li>
+</ul>
+<p>Thanks to <a href="https://twitter.com/la_juyis">Julia</a>,
+<a href="https://twitter.com/rainveil">Kyle</a> and
+<a href="https://plus.google.com/+KevinGunnCanonical">Kevin</a> for the nice session.</p>
+<p>Join us again next Friday at <a href="https://ubuntuonair.com">Ubuntu On-Air</a>.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/setup-apt-cache/" class="u-url">Set up a cache for deb packages</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/setup-apt-cache/" rel="bookmark"><time class="published dt-published" datetime="2016-12-08T19:43:13-06:00" title="2016-12-08 19:43">2016-12-08 19:43</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <p>All Linux distributions are constantly updating the versions of the packages in their archives. That’s what makes them great, lots of people working in a distributed way to let you easily update your software and get the latest features or critical bug fixes.</p>
+<p>And you should constatly update your operating system. Otherwise you’ll become an easy target for criminals exploiting known vulnerabilities.</p>
+<p>The problem, at least for me, is that I have many many Ubuntu machines in the house and my badwidth is really bad. So keeping all my real machines, virtual machines and various devices up-to-date every day has become a slow problem.</p>
+<p>The solution is to cache the downloaded deb packages. So only one machine has to make the downloads from the internet, and they will be kept in my local network to make much faster to get the packages in the other machines.</p>
+<p>So let me introduce you to <a href="https://www.unix-ag.uni-kl.de/~bloch/acng/">Apt-Cacher NG</a>.</p>
+<p>Setting it up is simple. First, choose a machine to run the cacher and store the packages. Ideally, this machine should be running all the time, and should have a good amount of storage space. I’m using my desktop as the cacher; but as soon as I update my router to one that runs Ubuntu, I will make that one the cacher.</p>
+<p>On that machine, install apt-cacher-ng:</p>
+<pre><code>  sudo apt install apt-cacher-ng</code></pre>
+<p>And that’s it. The cacher is installed and configured. Now we need the name of this machine to use it on the other ones:</p>
+<pre><code>  $ hostname
+  calchas</code></pre>
+<p>In this example, <em>calchas</em> is the name of the machine I’m using as the cacher. Take note of the name of your machine, and now, in all the other machines:</p>
+<pre><code>  $ sudo gedit /etc/apt/apt.conf.d/02proxy</code></pre>
+<p>That will create a new empty configuration file for <em>apt</em>, and open it to be edited with <em>gedit</em>, the default graphical editor in Ubuntu. In the editor, write this:</p>
+<pre><code>  Acquire::http::proxy "http://calchas.lan:3142";</code></pre>
+<p>replacing <em>calchas</em> with the name of your cacher machine, collected above. The <em>.lan</em> part is really only needed when you are setting it up in a virtual machine and the host is the same as the cacher, but it doesn’t hurt to add it on real machines. That number, <em>3142</em>, is the network port where the caching service is running, leave it unchanged.</p>
+<p>After that, the first time you update a package in your network it will be slow just as before. But all the other machines updating the same package will be very fast. I have to thank <em>apt-cacher-ng</em> for saving me many hours during my updates of the past years.</p>
+<div class="references">
+
+</div>
+    </div>
+    </article><article class="h-entry post-text"><header><h1 class="p-name entry-title"><a href="blog/ubuntu-testing-day-wrap-up-20161202/" class="u-url">Ubuntu Testing Day wrap up - 20161202</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Leo Arias
+            </span></p>
+            <p class="dateline"><a href="blog/ubuntu-testing-day-wrap-up-20161202/" rel="bookmark"><time class="published dt-published" datetime="2016-12-05T11:04:13-06:00" title="2016-12-05 11:04">2016-12-05 11:04</time></a></p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>We have survived two testing days, and now we can safely say that it will become
+a Friday tradition :)</p>
+<p>Last Friday our nice guest was <a href="https://twitter.com/geekgonecrazy">Aaron Ogle</a>,
+from <a href="https://rocket.chat/">Rocket Chat</a>. He gave us a tour on the Rocket Chat
+UI and we discussed about how they packaged it as a snap.</p>
+<p>If you missed it, click the image below to watch it.</p>
+<p><a href="https://www.youtube.com/watch?v=9mHhoniKKBk"><img alt="Alt text" src="https://img.youtube.com/vi/9mHhoniKKBk/0.jpg"></a></p>
+<p>Building from what we saw on the first session, we tested the snap
+using a virtual machine again. But this time, we cloned it to keep a pristine
+machine and make following testing sessions faster. If you want to help the
+Ubuntu and Rocket Chat communities, this is an easy way to prepare your
+environment:</p>
+<ul>
+<li><a href="http://elopio.net/blog/install-ubuntu-in-vm/">Set up a virtual machine</a></li>
+<li><a href="https://www.ubuntu.com/download/desktop/install-ubuntu-desktop">Install Ubuntu</a></li>
+<li><a href="http://elopio.net/blog/pristine-vm/">Clone the pristine virtual machine</a></li>
+</ul>
+<p>Once you have your clone ready, install the most recent and bleeding edge
+version of rocket chat with:</p>
+<pre class="code literal-block"><span></span>$ sudo snap install rocketchat-server --edge
+</pre>
+
+
+<p>Then you can follow this
+<a href="https://gist.github.com/elopio/7e020a8353bb538c396749f2bda80fff">gist with the initial steps to start testing the Rocket Chat snap</a></p>
+<p>Also you can test a real installation of Rocket Chat, joining
+<a href="https://rocket.ubuntu.com/channel/community">our community channel</a>, where we
+are available all day, every day. If you have a question, just ask. I am elopio
+in there.</p>
+<p>During the session we took a look at the <a href="https://github.com">GitHub website</a>,
+where many free software communities do their development in the open. They have
+a great <a href="https://guides.github.com/activities/contributing-to-open-source/">guide to start contributing to open source projects</a>. Go on and
+spread your love for free software in the form of bug reports :)</p>
+<p>The gratitude this week goes to our newly acquired staff members
+<a href="https://twitter.com/la_juyis">Julia</a> and
+<a href="https://twitter.com/rainveil">Kyle</a>, and of course to Aaron for letting us
+have a funny Friday evening. Make sure to take a look at the cool
+things he and his teammates are doing; and if you have some free time and want
+to join an exciting, open and nice community, give them a hand. Also try the
+Jitsi integration for video conference, it's mind-blowing that there are no
+closed components anywhere.</p>
+<p>See you next Friday at <a href="https://ubuntuonair.com">Ubuntu On-Air</a>.</p>
+</div>
+    </div>
+    </article>
+</div>
+
+        <nav class="postindexpager"><ul class="pager">
+<li class="previous">
+                <a href="." rel="prev">Pli novaj artikoloj</a>
+            </li>
+            <li class="next">
+                <a href="index-1.html" rel="next">Pli malnovaj artikoloj</a>
+            </li>
+        </ul></nav>
+</div>
+        <!--End of body content-->
+
+        <footer id="footer"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a>Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. - Powered by <a href="https://getnikola.com" rel="nofollow">Nikola</a>
+            
+        </footer>
+</div>
+</div>
+
+
+            <script src="../assets/js/all-nocdn.js"></script><script>$('a.image-reference:not(.islink) img:not(.islink)').parent().colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script><!-- fancy dates --><script>
+    moment.locale("eo");
+    fancydates(0, "YYYY-MM-DD HH:mm");
+    </script><!-- end fancy dates -->
+</body>
+</html>
